@@ -3,418 +3,811 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PULSE: Het Interactieve Ganzenbord</title>
+    <title>PULSE - Spel</title>
     <style>
+        /* ====================================================================== */
+        /* I. GLOBALE STIJLEN & CONTAINER */
+        /* ====================================================================== */
+
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f9;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a2e;
+            color: #ffffff;
+            overflow: hidden;
+            position: relative;
         }
-        #game-setup, #game-board {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        .app-container {
+            width: 375px;
+            height: 812px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 40px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 0 10px rgba(255, 255, 255, 0.15);
+            padding: 30px 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            backdrop-filter: blur(15px);
+            position: relative;
+            overflow: hidden;
         }
-        h1, h2 {
+        
+        .screen {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 30px 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out; 
+        }
+
+        #main-screen {
+            visibility: visible;
+            opacity: 1;
+            position: relative;
+        }
+
+        .show {
+            visibility: visible !important;
+            opacity: 1 !important;
+            position: relative !important;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 10;
+            opacity: 0.8;
+        }
+
+        /* ====================================================================== */
+        /* II. HOOFDSCHERM & DEELNEMERSCHREM STIJLEN */
+        /* ====================================================================== */
+
+        .main-content, .players-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .header {
             text-align: center;
-            color: #007bff;
+            margin-bottom: 40px; 
+            padding-top: 20px;
+            width: 100%;
         }
-        /* Setup Style */
-        #player-input-section {
+        
+        .title {
+            font-size: 38px; 
+            font-weight: 800;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff, 0 0 20px #ff00ff;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            opacity: 0.9;
+            margin-top: 10px;
+            text-shadow: none;
+        }
+
+        /* Navigatie Buttons */
+        .start-button-container-top, .start-game-container {
+            width: 100%;
+            max-width: 340px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .start-button {
+            background: #4CAF50;
+            color: #1a1a2e;
+            padding: 15px 30px;
+            border-radius: 35px;
+            font-size: 18px;
+            font-weight: 800;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            box-shadow: 0 5px 20px rgba(76, 175, 80, 0.9);
+            transition: transform 0.2s;
+        }
+
+        .button-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 340px;
+            margin-bottom: auto;
+        }
+
+        .app-button {
+            height: 190px;
+            padding: 25px;
+            border-radius: 30px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-decoration: none;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        
+        /* Deelnemers invoer en lijst */
+        .input-group {
             display: flex;
             gap: 10px;
+            width: 100%;
+            max-width: 340px;
             margin-bottom: 20px;
         }
-        #player-list {
+
+        .name-input {
+            flex-grow: 1;
+            padding: 15px;
+            border-radius: 15px;
+            border: 2px solid #00bcd4;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 16px;
+        }
+
+        .add-button {
+            background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
+            color: #1a1a2e;
+            padding: 15px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            font-size: 28px;
+            font-weight: 800;
+            cursor: pointer;
+        }
+
+        .players-list-container {
+            width: 100%;
+            max-width: 340px;
+            flex-grow: 1; 
+            overflow-y: auto; 
+            margin-bottom: 20px; 
+        }
+        
+        .players-list {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
-        #player-list li {
-            background: #e9ecef;
-            padding: 10px;
-            margin-bottom: 5px;
-            border-radius: 5px;
+
+        .player-item {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            font-size: 18px;
+            font-weight: 600;
+            border-left: 5px solid transparent; 
         }
-        /* Board Style */
-        #board-display {
-            display: grid;
-            grid-template-columns: repeat(10, 1fr);
-            gap: 5px;
-            margin: 20px 0;
-            border: 2px solid #333;
-            padding: 5px;
-            border-radius: 5px;
+        
+        .player-name {
+            font-weight: 700;
         }
-        .square {
+        
+        .remove-button {
+            background: transparent;
+            border: none;
+            color: #ff4081;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .start-game-button {
+            background: linear-gradient(145deg, #ff4081 0%, #ff8c00 100%);
+            color: white;
+            padding: 18px 30px;
+            border-radius: 35px;
+            font-size: 20px;
+            font-weight: 800;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
             width: 100%;
-            aspect-ratio: 1 / 1;
-            background: #eee;
-            border: 1px solid #ccc;
+        }
+
+
+        /* ====================================================================== */
+        /* III. SPELSCHERM STIJLEN (NIEUW) */
+        /* ====================================================================== */
+        
+        #game-screen .header {
+            margin-bottom: 5px;
+            padding-top: 10px;
+        }
+
+        .current-player-info {
+            width: 100%;
+            max-width: 340px;
+            text-align: center;
+            margin-bottom: 15px;
+            padding: 10px 0;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .current-player-name {
+            font-size: 24px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: white; 
+        }
+
+        .game-board-container {
+            width: 100%;
+            max-width: 340px;
+            height: 120px;
+            margin-bottom: 20px;
+            overflow-x: auto; 
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            padding: 10px 0;
+            white-space: nowrap; 
             display: flex;
             align-items: center;
-            justify-content: center;
-            font-size: 0.8em;
-            position: relative;
-            box-sizing: border-box;
-            border-radius: 3px;
         }
-        .start { background-color: #4CAF50; color: white; font-weight: bold; }
-        .end { background-color: #F44336; color: white; font-weight: bold; }
-        .challenge { background-color: #ffc107; } /* Geel: Uitdaging/Vraag */
-        .penalty { background-color: #dc3545; color: white; } /* Rood: Straf */
-        .bonus { background-color: #28a745; color: white; } /* Groen: Bonus */
-        
+
+        .board-square {
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            margin: 0 5px;
+            background: rgba(0, 0, 0, 0.5);
+            font-size: 14px;
+            font-weight: 700;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .board-square.active {
+            border-color: #ffeb3b;
+            box-shadow: 0 0 10px #ffeb3b;
+            transform: scale(1.1);
+            background: linear-gradient(135deg, #2a2a44, #1a1a2e);
+        }
+
         .player-token {
             position: absolute;
-            width: 15px;
-            height: 15px;
+            top: 5px;
+            right: 5px;
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
-            border: 2px solid white;
-            z-index: 10;
-            opacity: 0.9;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            background-color: white; 
+            border: 1px solid #1a1a2e;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
         }
-        /* Turn and Action Style */
-        #turn-info {
+
+        .question-container {
+            flex-grow: 1; 
+            width: 100%;
+            max-width: 340px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+            padding: 25px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
             margin-bottom: 20px;
-            padding: 10px;
-            background: #007bff;
-            color: white;
-            border-radius: 5px;
         }
-        #action-section {
-            text-align: center;
-            margin-top: 20px;
-            padding: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+
+        .question-type {
+            font-size: 18px;
+            font-weight: 700;
+            color: #00bcd4; 
+            margin-bottom: 10px;
+            text-transform: uppercase;
         }
-        #question-area {
-            margin-top: 15px;
-            padding: 10px;
-            background: #e9ecef;
-            border-radius: 5px;
-            min-height: 50px;
+
+        .question-text {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.4;
         }
-        #action-buttons button {
-            padding: 10px 20px;
-            margin: 5px;
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            width: 100%;
+            max-width: 340px;
+            padding-top: 10px;
+        }
+
+        .action-button {
+            padding: 15px 10px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 800;
+            text-transform: uppercase;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
-            font-weight: bold;
+            flex-grow: 1;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
         }
-        .dice-button { background-color: #17a2b8; color: white; }
-        .generate-button { background-color: #ff8c00; color: white; }
-        .complete-button { background-color: #28a745; color: white; }
-        .consequence-button { background-color: #dc3545; color: white; }
+
+        #completedButton {
+            background: linear-gradient(135deg, #4CAF50, #66BB6A);
+            color: white;
+        }
+
+        #consequenceButton {
+            background: linear-gradient(135deg, #ff4081, #ff8c00);
+            color: white;
+        }
+        
     </style>
 </head>
 <body>
 
-    <div id="game-setup">
-        <h1>PULSE - Spelvoorbereiding</h1>
-        <hr>
-        <h2>1. Spelers Toevoegen</h2>
-        <div id="player-input-section">
-            <input type="text" id="player-name" placeholder="Naam speler" style="flex-grow: 1;">
-            <button onclick="addPlayer()" style="background-color: #007bff; color: white;">Voeg Speler toe</button>
-        </div>
-        <ul id="player-list"></ul>
-        <p id="player-status"></p>
+    <div id="app" class="app-container">
 
-        <h2>2. Thema Kiezen</h2>
-        <select id="theme-selector">
-            <option value="Algemene Kennis">Algemene Kennis</option>
-            <option value="Popcultuur en Media">Popcultuur en Media</option>
-            <option value="Wetenschap en Technologie">Wetenschap en Technologie</option>
-            <option value="Geschiedenis en Geografie">Geschiedenis en Geografie</option>
-        </select>
-        
-        <hr>
-        <div style="text-align: center; margin-top: 20px;">
-            <button onclick="startGame()" style="background-color: #28a745; color: white; padding: 15px 30px; font-size: 1.2em;">START HET SPEL</button>
-        </div>
-    </div>
+        <button id="backButton" class="back-button" style="display: none;">&larr;</button>
 
-    <div id="game-board" style="display: none;">
-        <h1>PULSE - Het Ganzenbord</h1>
-        <div id="turn-info"></div>
-        <div id="board-display"></div>
-        
-        <div id="action-section">
-            <button id="roll-dice-btn" class="dice-button" onclick="rollDice()">Gooi Dobbelsteen</button>
-
-            <div id="action-prompt" style="display: none;">
-                <h3>Vraag voor <span id="current-player-name"></span>:</h3>
-                <div id="question-area">Druk op 'Vraag Genereren' om te beginnen.</div>
+        <div id="main-screen" class="screen show">
+            <div class="main-content">
+                <div class="header">
+                    <div class="title">PULSE</div>
+                    <div class="subtitle">Jouw Verhaal, Onze Uitdaging</div>
+                </div>
                 
-                <button id="generate-question-btn" class="generate-button" onclick="generateQuestion()">Vraag Genereren</button>
-                
-                <div id="action-buttons" style="display: none;">
-                    <button class="complete-button" onclick="handleConsequence(true)">Vraag Voltooid (Ga Door)</button>
-                    <button class="consequence-button" onclick="handleConsequence(false)">Consequentie Accepteren (Sla Beurt Over)</button>
+                <div class="start-button-container-top">
+                    <button id="goToPlayersButton" class="start-button">
+                        WIE SPEELT MEE?
+                    </button>
+                </div>
+
+                <div class="button-stack">
+                    <a href="#" class="app-button" id="borrelButton" style="background: linear-gradient(145deg, #ff4081 0%, #ff8c00 100%); box-shadow: 0 10px 30px rgba(255, 64, 129, 0.8);" data-category="Borrel Pulse">
+                        <span class="icon">🍻</span>
+                        <div>
+                            <div class="button-title">BORREL PULSE</div>
+                            <div class="button-subtitle">High-Energy Truth, Dare of Shot!</div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="app-button" id="deepTalkButton" style="background: linear-gradient(145deg, #00bcd4 0%, #3f51b5 100%); box-shadow: 0 10px 30px rgba(0, 188, 212, 0.8);" data-category="Deep Talk">
+                        <span class="icon">💬</span>
+                        <div>
+                            <div class="button-title">DEEP TALK</div>
+                            <div class="button-subtitle">Harten Openen & Verdieping</div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <p id="game-log" style="margin-top: 20px; min-height: 20px;"></p>
-    </div>
 
+        <div id="players-screen" class="screen">
+            <div class="players-content">
+                <div class="header" style="margin-bottom: 20px; padding-top: 10px;">
+                    <div class="title">DEELNEMERS</div>
+                    <div class="subtitle">Voeg alle namen toe die meespelen.</div>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="nameInput" class="name-input" placeholder="Naam speler..." required>
+                    <button id="addButton" class="add-button">+</button>
+                </div>
+
+                <div class="players-list-container">
+                    <ul id="playersList" class="players-list">
+                        </ul>
+                </div>
+
+                <div class="start-game-container" style="margin-bottom: 0; padding-top: 10px;">
+                    <button id="startGameButton" class="start-game-button">
+                        START PULSE SPEL
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-screen" class="screen">
+            <div class="header">
+                <div class="title">PULSE</div>
+                <div class="subtitle" id="gameCategory"></div> </div>
+            
+            <div class="current-player-info">
+                AAN DE BEURT: <span id="currentPlayerName" class="current-player-name">...</span>
+            </div>
+
+            <div class="game-board-container" id="gameBoardContainer">
+                </div>
+
+            <div class="question-container">
+                <div id="questionType" class="question-type">LADEN...</div>
+                <div id="questionText" class="question-text">
+                    Tik op 'Vraag Genereren' om te beginnen.
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="completedButton" class="action-button">
+                    ✅ OPGELOST (+1 Vakje)
+                </button>
+                <button id="consequenceButton" class="action-button">
+                    🍻 SHOT/SLOK (+0 Vakjes)
+                </button>
+            </div>
+            
+            <div class="action-buttons" style="margin-top: 15px;">
+                <button id="generateQuestionButton" class="action-button" style="background: #3f51b5; color: white;">
+                    VRAAG GENEREREN
+                </button>
+            </div>
+        </div>
+
+    </div>
+    
     <script>
-        // GLOBAL STATE
+        // Bestaande elementen
+        const mainScreen = document.getElementById('main-screen');
+        const playersScreen = document.getElementById('players-screen');
+        const gameScreen = document.getElementById('game-screen'); 
+        const goToPlayersButton = document.getElementById('goToPlayersButton');
+        const backButton = document.getElementById('backButton');
+        const addButton = document.getElementById('addButton');
+        const nameInput = document.getElementById('nameInput');
+        const playersList = document.getElementById('playersList');
+        const startGameButton = document.getElementById('startGameButton');
+        
+        // Spelscherm elementen
+        const gameCategory = document.getElementById('gameCategory');
+        const currentPlayerNameEl = document.getElementById('currentPlayerName');
+        const gameBoardContainer = document.getElementById('gameBoardContainer');
+        const questionTypeEl = document.getElementById('questionType');
+        const questionTextEl = document.getElementById('questionText');
+        const generateQuestionButton = document.getElementById('generateQuestionButton');
+        const completedButton = document.getElementById('completedButton');
+        const consequenceButton = document.getElementById('consequenceButton');
+
+
+        // GLOBALE SPEL STATUS
         let players = [];
         let currentPlayerIndex = 0;
-        const BOARD_SIZE = 30; // 30 velden in totaal (1-30)
-        let isDiceRolled = false;
+        let selectedCategory = 'Borrel Pulse'; // Default
+        const TOTAL_BOARD_SQUARES = 25; 
+        
+        // KLEUR PALET
+        let availableColors = [
+            '#ff4081', '#00bcd4', '#ff8c00', '#4caf50', '#9c27b0', '#ffeb3b', '#3f51b5'
+        ];
+        
+        // HULP FUNCTIES
+        function getPlayerObject(name, color) {
+            return {
+                name: name,
+                color: color,
+                position: 0, // Positie 0 is 'Start'
+                score: 0 
+            };
+        }
 
-        // PLAYER MANAGEMENT
+        // --- NAVIGATIE LOGICA ---
+        
+        function showScreen(screenToShow, screenToHide) {
+            document.querySelectorAll('.screen').forEach(s => {
+                s.classList.remove('show');
+                s.style.visibility = 'hidden';
+                s.style.opacity = '0';
+                s.style.position = 'absolute';
+            });
+
+            screenToShow.classList.add('show');
+            screenToShow.style.visibility = 'visible';
+            screenToShow.style.opacity = '1';
+            screenToShow.style.position = 'relative';
+
+            backButton.style.display = (screenToShow === mainScreen) ? 'none' : 'block';
+        }
+
+        goToPlayersButton.addEventListener('click', () => {
+            showScreen(playersScreen, mainScreen);
+            nameInput.focus();
+        });
+
+        backButton.addEventListener('click', () => {
+            if (gameScreen.classList.contains('show')) {
+                 if (confirm("Weet je zeker dat je het spel wilt stoppen en terugkeren naar het Hoofdscherm?")) {
+                    showScreen(mainScreen, gameScreen);
+                    players = []; // Reset spelers
+                    // Beschikbare kleuren opnieuw vullen
+                    availableColors = ['#ff4081', '#00bcd4', '#ff8c00', '#4caf50', '#9c27b0', '#ffeb3b', '#3f51b5'];
+                    playersList.innerHTML = ''; // Leeg de spelerslijst
+                 }
+            } else {
+                 showScreen(mainScreen, playersScreen);
+            }
+        });
+
+        // --- DEELNEMERS LOGICA ---
+        
         function addPlayer() {
-            const nameInput = document.getElementById('player-name');
             const name = nameInput.value.trim();
-            if (name && players.length < 6) {
-                const color = getRandomColor();
-                players.push({
-                    name: name,
-                    position: 1,
-                    color: color,
-                    skipTurns: 0,
-                    score: 0
+            
+            if (name) {
+                if (availableColors.length === 0) {
+                    alert("Alle unieke kleuren zijn in gebruik (Max 7 spelers).");
+                    return; 
+                }
+                
+                const randomIndex = Math.floor(Math.random() * availableColors.length);
+                const selectedColor = availableColors.splice(randomIndex, 1)[0]; 
+                
+                const listItem = document.createElement('li');
+                listItem.className = 'player-item';
+                listItem.style.borderLeft = `5px solid ${selectedColor}`;
+                listItem.setAttribute('data-color', selectedColor);
+                
+                const nameSpan = document.createElement('span');
+                nameSpan.className = 'player-name';
+                nameSpan.textContent = name;
+                nameSpan.style.color = selectedColor; 
+                
+                const removeButton = document.createElement('button');
+                removeButton.className = 'remove-button';
+                removeButton.textContent = 'X';
+                
+                removeButton.addEventListener('click', function() {
+                    const colorToRemove = listItem.getAttribute('data-color');
+                    availableColors.push(colorToRemove); 
+                    playersList.removeChild(listItem);
                 });
-                renderPlayerList();
+                
+                listItem.appendChild(nameSpan);
+                listItem.appendChild(removeButton);
+                playersList.appendChild(listItem);
+                
                 nameInput.value = '';
-                document.getElementById('player-status').textContent = `Spelers: ${players.length}/6`;
-            } else if (players.length >= 6) {
-                document.getElementById('player-status').textContent = 'Maximaal 6 spelers toegestaan.';
+                nameInput.focus();
             }
         }
 
-        function getRandomColor() {
-            const colors = ['#FF5733', '#33FF57', '#3357FF', '#FF33FF', '#33FFFF', '#FFC300'];
-            return colors[players.length % colors.length];
-        }
+        addButton.addEventListener('click', addPlayer);
+        nameInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                addPlayer();
+            }
+        });
+        
+        // Vangt de geselecteerde categorie op
+        document.getElementById('borrelButton').addEventListener('click', function() {
+            selectedCategory = this.getAttribute('data-category');
+        });
+        document.getElementById('deepTalkButton').addEventListener('click', function() {
+            selectedCategory = this.getAttribute('data-category');
+        });
 
-        function renderPlayerList() {
-            const list = document.getElementById('player-list');
-            list.innerHTML = '';
-            players.forEach(player => {
-                const li = document.createElement('li');
-                li.innerHTML = `<span style="color: ${player.color}; font-weight: bold;">${player.name}</span> (Positie: ${player.position}) 
-                                <button onclick="removePlayer('${player.name}')" style="background: none; border: none; color: #dc3545;">&times;</button>`;
-                list.appendChild(li);
-            });
-        }
 
-        function removePlayer(name) {
-            players = players.filter(p => p.name !== name);
-            renderPlayerList();
-            document.getElementById('player-status').textContent = `Spelers: ${players.length}/6`;
-        }
-
-        // GAME START AND BOARD RENDERING
-        function startGame() {
-            if (players.length < 2) {
-                alert("Je hebt minimaal 2 spelers nodig om te starten!");
+        startGameButton.addEventListener('click', () => {
+            const listItems = Array.from(playersList.children);
+            
+            if (listItems.length < 2) {
+                alert("Je hebt minimaal 2 spelers nodig om te beginnen.");
                 return;
             }
-            document.getElementById('game-setup').style.display = 'none';
-            document.getElementById('game-board').style.display = 'block';
-            renderBoard();
-            updateTurnInfo();
+
+            // Bouw de definitieve spelerslijst
+            players = listItems.map(li => {
+                const name = li.querySelector('.player-name').textContent;
+                const color = li.getAttribute('data-color');
+                return getPlayerObject(name, color);
+            });
+            
+            currentPlayerIndex = 0;
+            
+            initializeGameScreen();
+            showScreen(gameScreen, playersScreen);
+        });
+        
+        // --- SPELSCHERM FUNCTIES ---
+
+        function initializeGameScreen() {
+            gameCategory.textContent = selectedCategory;
+            drawGameBoard();
+            updateCurrentPlayerUI();
+            resetQuestionContainer();
+        }
+        
+        function resetQuestionContainer() {
+            questionTypeEl.textContent = 'Klaar om te beginnen?';
+            questionTextEl.textContent = 'Druk op "VRAAG GENEREREN" voor de eerste opdracht.';
+            completedButton.disabled = true;
+            consequenceButton.disabled = true;
+            generateQuestionButton.disabled = false;
         }
 
-        function renderBoard() {
-            const board = document.getElementById('board-display');
-            board.innerHTML = '';
-            for (let i = 1; i <= BOARD_SIZE; i++) {
+        function drawGameBoard() {
+            gameBoardContainer.innerHTML = '';
+            
+            // Vakje 0 is START
+            const startSquare = document.createElement('div');
+            startSquare.className = 'board-square';
+            startSquare.id = `square-0`;
+            startSquare.textContent = `START`;
+            startSquare.style.backgroundColor = '#4CAF50';
+            gameBoardContainer.appendChild(startSquare);
+
+            for (let i = 1; i <= TOTAL_BOARD_SQUARES; i++) {
                 const square = document.createElement('div');
-                square.classList.add('square');
+                square.className = 'board-square';
                 square.id = `square-${i}`;
-                square.textContent = i;
+                square.textContent = `Vakje ${i}`;
                 
-                // Speciale velden
-                if (i === 1) { square.classList.add('start'); square.textContent = 'START'; }
-                if (i === BOARD_SIZE) { square.classList.add('end'); square.textContent = 'FINISH'; }
-                if ([5, 15, 25].includes(i)) { square.classList.add('challenge'); square.textContent += ' (?)'; }
-                if (i === 10) { square.classList.add('penalty'); square.textContent += ' (-)'; }
-                if (i === 20) { square.classList.add('bonus'); square.textContent += ' (+2)'; }
+                if (i === 5) {
+                    square.textContent = "Slokken! 🥃";
+                    square.style.backgroundColor = '#ff4081';
+                } else if (i === 10) {
+                    square.textContent = "TERUG naar 1! ↩️";
+                    square.style.backgroundColor = '#3f51b5';
+                }
                 
-                board.appendChild(square);
+                gameBoardContainer.appendChild(square);
             }
-            updatePlayerPositions();
+            
+            updateBoardTokens();
         }
-
-        function updatePlayerPositions() {
+        
+        function updateBoardTokens() {
             document.querySelectorAll('.player-token').forEach(token => token.remove());
 
-            players.forEach((player, pIndex) => {
-                const square = document.getElementById(`square-${player.position}`);
-                if (square) {
+            players.forEach(player => {
+                const targetSquare = document.getElementById(`square-${player.position}`);
+                if (targetSquare) {
                     const token = document.createElement('div');
-                    token.classList.add('player-token');
+                    token.className = 'player-token';
                     token.style.backgroundColor = player.color;
-                    
-                    // Kleine offset om tokens te scheiden
-                    const offset = pIndex * 5; 
-                    token.style.left = `${5 + offset}px`;
-                    
-                    square.appendChild(token);
+                    targetSquare.appendChild(token);
                 }
             });
-            renderPlayerList(); // Update de lijst in de setup (voor info)
+            
+            document.querySelectorAll('.board-square').forEach(sq => sq.classList.remove('active'));
+            const currentPlayerSquare = document.getElementById(`square-${players[currentPlayerIndex].position}`);
+            if (currentPlayerSquare) {
+                 currentPlayerSquare.classList.add('active');
+                 currentPlayerSquare.scrollIntoView({ behavior: 'smooth', inline: 'center' });
+            }
         }
 
-        function updateTurnInfo() {
+
+        function updateCurrentPlayerUI() {
             const player = players[currentPlayerIndex];
-            document.getElementById('turn-info').innerHTML = `Aan de beurt: <span style="color: ${player.color}; font-weight: bold;">${player.name}</span> (Positie: ${player.position})`;
-            document.getElementById('current-player-name').textContent = player.name;
-            
-            // Verberg/toon knoppen
-            document.getElementById('roll-dice-btn').style.display = isDiceRolled ? 'none' : 'block';
-            document.getElementById('action-prompt').style.display = 'none';
+            currentPlayerNameEl.textContent = player.name;
+            currentPlayerNameEl.style.color = player.color;
         }
 
-        function logGameAction(message) {
-            document.getElementById('game-log').textContent = message;
+        function nextTurn() {
+            currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
+            updateCurrentPlayerUI();
+            updateBoardTokens();
+            resetQuestionContainer();
         }
+        
+        // --- BEURT AFHANDELING ---
+        
+        completedButton.addEventListener('click', () => {
+            movePlayer(1); // Bij succes 1 vakje vooruit
+            nextTurn();
+        });
 
-        // GAME LOGIC
-        function rollDice() {
-            if (isDiceRolled) return;
-            const diceRoll = Math.floor(Math.random() * 6) + 1;
-            logGameAction(`${players[currentPlayerIndex].name} gooide een ${diceRoll}.`);
-            
-            movePlayer(diceRoll);
-            isDiceRolled = true;
-            document.getElementById('roll-dice-btn').style.display = 'none';
-        }
-
+        consequenceButton.addEventListener('click', () => {
+            // Speler blijft staan (position + 0)
+            nextTurn();
+        });
+        
         function movePlayer(steps) {
             const player = players[currentPlayerIndex];
             let newPosition = player.position + steps;
-
-            if (newPosition >= BOARD_SIZE) {
-                newPosition = BOARD_SIZE;
-                logGameAction(`${player.name} is gefinisht!`);
-                endGame(player);
-                return;
+            
+            if (newPosition >= TOTAL_BOARD_SQUARES) {
+                newPosition = TOTAL_BOARD_SQUARES;
+                alert(`Gefeliciteerd! ${player.name} heeft het spel gewonnen! 🎉`);
             }
             
             player.position = newPosition;
-            updatePlayerPositions();
+            updateBoardTokens();
             
-            checkSpecialSquare(player);
-        }
-
-        function checkSpecialSquare(player) {
-            const position = player.position;
-            const logElement = document.getElementById('game-log');
-
-            if ([5, 15, 25].includes(position)) {
-                logElement.textContent = `${player.name} landde op een Uitdagingsveld! Beantwoord de vraag of accepteer de consequentie.`;
-                showActionPrompt('challenge');
-            } else if (position === 10) {
-                logElement.textContent = `${player.name} landde op Veld 10 (Straf)! Sla de volgende beurt over.`;
-                player.skipTurns += 1;
-                endTurn();
-            } else if (position === 20) {
-                logElement.textContent = `${player.name} landde op Veld 20 (Bonus)! Ga 2 velden vooruit.`;
-                movePlayer(2); // Recursieve call, maar dit is een simpele move
-            } else {
-                endTurn();
-            }
-        }
-
-        function showActionPrompt(type) {
-            document.getElementById('action-prompt').style.display = 'block';
-            document.getElementById('generate-question-btn').style.display = 'block';
-            document.getElementById('action-buttons').style.display = 'none'; // Verberg actie knoppen totdat vraag geladen is
-            document.getElementById('question-area').textContent = "Vraag genereren...";
-        }
-
-        // GEMINI API INTEGRATION
-        async function generateQuestion() {
-            document.getElementById('generate-question-btn').disabled = true;
-            document.getElementById('question-area').textContent = "Bezig met genereren, even geduld...";
-
-            const player = players[currentPlayerIndex];
-            const theme = document.getElementById('theme-selector').value;
-            const prompt = `Je bent de spelleider van een ganzenbordspel genaamd PULSE. De speler, ${player.name}, is geland op een uitdagingsveld. Genereer een korte en unieke opdracht of vraag (maximaal 2 zinnen) binnen het thema "${theme}". De opdracht moet spannend en creatief zijn, niet puur kennis. Begin direct met de opdracht/vraag zonder inleiding.`;
-
-            try {
-                // De Vercel Serverless Function aanroepen
-                const response = await fetch('/api/generate', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ prompt: prompt })
-                });
-
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-
-                const data = await response.json();
-                
-                document.getElementById('question-area').textContent = data.text || "Fout bij genereren, probeer opnieuw.";
-                document.getElementById('generate-question-btn').style.display = 'none';
-                document.getElementById('action-buttons').style.display = 'block';
-
-            } catch (error) {
-                console.error("Fout bij AI-call:", error);
-                document.getElementById('question-area').textContent = `Fout bij AI-call: ${error.message}. Controleer de Vercel logs en API-sleutel.`;
-                document.getElementById('generate-question-btn').disabled = false;
-            }
-        }
-
-        function handleConsequence(isSuccessful) {
-            const player = players[currentPlayerIndex];
-            
-            if (isSuccessful) {
-                logGameAction(`${player.name} heeft de uitdaging voltooid en gaat door naar de volgende beurt!`);
-            } else {
-                logGameAction(`${player.name} accepteerde de consequentie en slaat 1 beurt over.`);
-                player.skipTurns += 1;
-            }
-            
-            // Reset de UI en ga naar de volgende beurt
-            document.getElementById('generate-question-btn').disabled = false;
-            endTurn();
-        }
-
-        function endTurn() {
-            // Check voor skip turns voor de huidige speler (telt de beurt die zojuist is afgerond)
-            if (players[currentPlayerIndex].skipTurns > 0) {
-                logGameAction(`${players[currentPlayerIndex].name} slaat de volgende beurt over (Nog ${players[currentPlayerIndex].skipTurns} beurt(en) over).`);
-                players[currentPlayerIndex].skipTurns -= 1;
-            } else {
-                // Ga naar de volgende speler (slaat spelers die moeten overslaan niet over)
-                currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
-            }
-            
-            // Reset voor de volgende beurt
-            isDiceRolled = false;
-            updateTurnInfo();
-            document.getElementById('action-prompt').style.display = 'none';
-            document.getElementById('generate-question-btn').style.display = 'block';
-            document.getElementById('action-buttons').style.display = 'none';
-        }
-
-        function endGame(winner) {
-            alert(`${winner.name} heeft gewonnen! Gefeliciteerd!`);
-            // Hier kun je logica toevoegen om het spel te resetten of te stoppen.
+            checkSquareEffect(player);
         }
         
-        // Initial call to render the list on load (though only needed after adding players)
-        document.addEventListener('DOMContentLoaded', () => {
-            renderPlayerList();
+        function checkSquareEffect(player) {
+             const position = player.position;
+             if (position === 10) {
+                 alert(`${player.name}, Je bent op het TERUG naar 1 vakje beland!`);
+                 player.position = 1;
+                 updateBoardTokens();
+             } 
+             // Hier komt de logica voor andere speciale vakjes
+        }
+        
+        // --- AI LOGICA (Placeholder) ---
+        
+        generateQuestionButton.addEventListener('click', async () => {
+             generateQuestionButton.disabled = true;
+             
+             questionTypeEl.textContent = 'AI WERKT...';
+             questionTextEl.textContent = 'De Gemini API is bezig met het genereren van een unieke vraag/opdracht...';
+             
+             // --- PLAATS HIER DE ECHTE GEMINI API CALL ---
+             
+             // Placeholder voor de API call
+             await new Promise(resolve => setTimeout(resolve, 1500)); 
+             
+             const fakeApiResponse = {
+                 type: selectedCategory === 'Borrel Pulse' ? 'DARE OF SHOT' : 'DEEP DIVE',
+                 question: `**${players[currentPlayerIndex].name}**, wat is het meest gênante dat je ooit in het openbaar hebt geroepen?`,
+                 consequence: '3 slokken bier of een halve shot als je niet antwoordt.' 
+             };
+             
+             // Toon het resultaat
+             questionTypeEl.textContent = fakeApiResponse.type;
+             questionTextEl.innerHTML = `
+                ${fakeApiResponse.question} 
+                <br><br> 
+                <span style="font-size: 18px; font-weight: 700; color: #ffeb3b;">*Consequentie: ${fakeApiResponse.consequence}*</span>
+             `;
+             
+             completedButton.disabled = false;
+             consequenceButton.disabled = false;
         });
+
+        // Initialiseer de game buttons op disabled totdat een vraag is geladen
+        completedButton.disabled = true;
+        consequenceButton.disabled = true;
+        
     </script>
+
+
+<script src="https://static.app/js/static.js" type="text/javascript"></script>
 </body>
 </html>
