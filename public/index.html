@@ -6,7 +6,7 @@
     <title>PULSE - Spel</title>
     <style>
         /* ====================================================================== */
-        /* I. GLOBALE STIJLEN & CONTAINER (Aangepast voor Full Screen) */
+        /* I. GLOBALE STIJLEN & CONTAINER */
         /* ====================================================================== */
 
         body {
@@ -14,23 +14,22 @@
             margin: 0;
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* Zorgt dat content bovenaan begint */
+            align-items: flex-start;
             min-height: 100vh;
-            background: #1a1a2e; /* Donkere achtergrond vult nu het hele scherm */
+            background: #1a1a2e;
             color: #ffffff;
-            overflow-x: hidden; /* Voorkom horizontale scroll */
+            overflow-x: hidden;
             position: relative;
         }
 
         .app-container {
-            /* Vaste telefoon afmetingen en styling verwijderd */
-            width: 100%; /* Neemt de volledige breedte in */
-            max-width: 500px; /* Houdt het op mobiel formaat (max. breedte) */
-            height: auto; /* De hoogte past zich aan de content aan */
-            min-height: 100vh; /* Zorgt ervoor dat het altijd het hele scherm vult op mobiel */
-            background: rgba(0, 0, 0, 0.5); /* Een lichte, donkere achtergrond binnen de max-width */
-            border-radius: 0; /* Geen afgeronde hoeken meer */
-            box-shadow: none; /* Geen telefoonrand of schaduw meer */
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            min-height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 0;
+            box-shadow: none;
             padding: 30px 20px;
             box-sizing: border-box;
             display: flex;
@@ -38,17 +37,15 @@
             align-items: center;
             backdrop-filter: none;
             position: relative;
-            overflow-y: auto; 
+            overflow-y: auto;
         }
         
         .screen {
             width: 100%;
-            height: auto; /* Past zich aan de content aan */
+            height: auto;
             min-height: 100%;
-            position: relative; /* Niet meer absolute positionering op het scherm */
-            top: auto;
-            left: auto;
-            padding: 0; /* Padding is al op de container ingesteld */
+            position: relative;
+            padding: 0;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
@@ -87,7 +84,7 @@
         /* II. HOOFDSCHERM & DEELNEMERSCHREM STIJLEN */
         /* ====================================================================== */
 
-        .main-content, .players-content {
+        .main-content, .players-content, .category-content {
             flex-grow: 1;
             display: flex;
             flex-direction: column;
@@ -100,10 +97,14 @@
             margin-bottom: 40px; 
             padding-top: 20px;
             width: 100%;
+            flex-grow: 1; /* Zorgt dat de header centraal staat op de main screen */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         
         .title {
-            font-size: 38px; 
+            font-size: 48px; /* Groter op home screen */
             font-weight: 800;
             letter-spacing: 4px;
             text-transform: uppercase;
@@ -120,40 +121,40 @@
             text-shadow: none;
         }
 
-        /* Navigatie Buttons */
-        .start-button-container-top, .start-game-container {
+        /* Navigatie Buttons (Start / Categorie) */
+        .button-container {
             width: 100%;
             max-width: 340px;
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 40px; /* Alleen voor de knoppen onderaan */
         }
 
         .start-button {
-            background: #4CAF50;
-            color: #1a1a2e;
-            padding: 15px 30px;
+            background: linear-gradient(145deg, #ff4081 0%, #ff8c00 100%);
+            color: white;
+            padding: 18px 30px;
             border-radius: 35px;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 800;
             text-transform: uppercase;
             border: none;
             cursor: pointer;
             width: 100%;
-            box-shadow: 0 5px 20px rgba(76, 175, 80, 0.9);
+            box-shadow: 0 5px 20px rgba(255, 64, 129, 0.8);
             transition: transform 0.2s;
         }
-
+        
+        /* Categorie Button Styling FIX */
         .button-stack {
             display: flex;
             flex-direction: column;
             gap: 20px;
             width: 100%;
             max-width: 340px;
-            margin-bottom: auto;
         }
 
         .app-button {
-            height: 190px;
+            height: 140px; /* Iets kleiner om ze beter te laten passen */
             padding: 25px;
             border-radius: 30px;
             color: white;
@@ -166,6 +167,27 @@
             cursor: pointer;
         }
         
+        /* Nieuwe stijlen voor de teksten en emoji's in de categorie knoppen */
+        .app-button .icon {
+            font-size: 32px; /* Emoji's groter */
+            margin-bottom: 5px;
+        }
+
+        .app-button .button-title {
+            font-size: 24px; /* Title groter en vetter */
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .app-button .button-subtitle {
+            font-size: 14px;
+            font-weight: 500;
+            opacity: 0.8;
+            margin-top: 5px;
+        }
+
+
         /* Deelnemers invoer en lijst */
         .input-group {
             display: flex;
@@ -241,7 +263,7 @@
         }
 
         .start-game-button {
-            background: linear-gradient(145deg, #ff4081 0%, #ff8c00 100%);
+            background: linear-gradient(145deg, #00bcd4 0%, #3f51b5 100%);
             color: white;
             padding: 18px 30px;
             border-radius: 35px;
@@ -398,44 +420,24 @@
 
         <button id="backButton" class="back-button" style="display: none;">&larr;</button>
 
-        <div id="main-screen" class="screen show">
-            <div class="main-content">
-                <div class="header">
-                    <div class="title">PULSE</div>
-                    <div class="subtitle">Jouw Verhaal, Onze Uitdaging</div>
+        <div id="start-screen" class="screen show">
+             <div class="main-content">
+                <div class="header" style="flex-grow: 1;">
+                    <div class="title" style="font-size: 60px;">PULSE</div>
+                    <div class="subtitle" style="font-size: 20px;">Jouw Verhaal, Onze Uitdaging</div>
                 </div>
-                
-                <div class="start-button-container-top">
+                <div class="button-container" style="margin-bottom: 20px;">
                     <button id="goToPlayersButton" class="start-button">
-                        WIE SPEELT MEE?
+                        START HET SPEL
                     </button>
-                </div>
-
-                <div class="button-stack">
-                    <a href="#" class="app-button" id="borrelButton" style="background: linear-gradient(145deg, #ff4081 0%, #ff8c00 100%); box-shadow: 0 10px 30px rgba(255, 64, 129, 0.8);" data-category="Borrel Pulse">
-                        <span class="icon">🍻</span>
-                        <div>
-                            <div class="button-title">BORREL PULSE</div>
-                            <div class="button-subtitle">High-Energy Truth, Dare of Shot!</div>
-                        </div>
-                    </a>
-                    
-                    <a href="#" class="app-button" id="deepTalkButton" style="background: linear-gradient(145deg, #00bcd4 0%, #3f51b5 100%); box-shadow: 0 10px 30px rgba(0, 188, 212, 0.8);" data-category="Deep Talk">
-                        <span class="icon">💬</span>
-                        <div>
-                            <div class="button-title">DEEP TALK</div>
-                            <div class="button-subtitle">Harten Openen & Verdieping</div>
-                        </div>
-                    </a>
                 </div>
             </div>
         </div>
-
         <div id="players-screen" class="screen">
             <div class="players-content">
-                <div class="header" style="margin-bottom: 20px; padding-top: 10px;">
-                    <div class="title">DEELNEMERS</div>
-                    <div class="subtitle">Voeg alle namen toe die meespelen.</div>
+                <div class="header" style="margin-bottom: 20px; padding-top: 10px; flex-grow: 0;">
+                    <div class="title" style="font-size: 32px; letter-spacing: 2px;">WIE SPEELT MEE?</div>
+                    <div class="subtitle">Voeg alle namen toe die meespelen (min. 2).</div>
                 </div>
 
                 <div class="input-group">
@@ -448,17 +450,44 @@
                         </ul>
                 </div>
 
-                <div class="start-game-container" style="margin-bottom: 0; padding-top: 10px;">
-                    <button id="startGameButton" class="start-game-button">
-                        START PULSE SPEL
+                <div class="button-container" style="margin-bottom: 0; padding-top: 10px;">
+                    <button id="goToCategoryButton" class="start-game-button">
+                        KIES CATEGORIE
                     </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="category-screen" class="screen">
+             <div class="category-content">
+                <div class="header" style="flex-grow: 0;">
+                    <div class="title" style="font-size: 32px; letter-spacing: 2px;">KIES CATEGORIE</div>
+                    <div class="subtitle">Selecteer de puls van jullie avond.</div>
+                </div>
+                
+                <div class="button-stack">
+                    <a href="#" class="app-button start-game-trigger" id="borrelButton" style="background: linear-gradient(145deg, #ff4081 0%, #ff8c00 100%); box-shadow: 0 10px 30px rgba(255, 64, 129, 0.8);" data-category="Borrel Pulse">
+                        <span class="icon">🍻</span>
+                        <div>
+                            <div class="button-title">BORREL PULSE</div>
+                            <div class="button-subtitle">High-Energy Truth, Dare of Shot!</div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="app-button start-game-trigger" id="deepTalkButton" style="background: linear-gradient(145deg, #00bcd4 0%, #3f51b5 100%); box-shadow: 0 10px 30px rgba(0, 188, 212, 0.8);" data-category="Deep Talk">
+                        <span class="icon">💬</span>
+                        <div>
+                            <div class="button-title">DEEP TALK</div>
+                            <div class="button-subtitle">Harten Openen & Verdieping</div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
 
         <div id="game-screen" class="screen">
             <div class="header">
-                <div class="title">PULSE</div>
+                <div class="title" style="font-size: 32px; letter-spacing: 2px;">PULSE</div>
                 <div class="subtitle" id="gameCategory"></div> </div>
             
             <div class="current-player-info">
@@ -480,7 +509,7 @@
                     ✅ OPGELOST (+1 Vakje)
                 </button>
                 <button id="consequenceButton" class="action-button">
-                    🍻 SHOT/SLOK (+0 Vakjes)
+                    🍻 SLOK/SHOT (+0 Vakjes)
                 </button>
             </div>
             
@@ -495,15 +524,19 @@
     
     <script>
         // Bestaande elementen
-        const mainScreen = document.getElementById('main-screen');
+        const startScreen = document.getElementById('start-screen'); // Nieuw
         const playersScreen = document.getElementById('players-screen');
+        const categoryScreen = document.getElementById('category-screen'); // Nieuw
         const gameScreen = document.getElementById('game-screen'); 
+        
         const goToPlayersButton = document.getElementById('goToPlayersButton');
+        const goToCategoryButton = document.getElementById('goToCategoryButton'); // Nieuw
+        const startGameTriggers = document.querySelectorAll('.start-game-trigger'); // Nieuwe triggers
+        
         const backButton = document.getElementById('backButton');
         const addButton = document.getElementById('addButton');
         const nameInput = document.getElementById('nameInput');
         const playersList = document.getElementById('playersList');
-        const startGameButton = document.getElementById('startGameButton');
         
         // Spelscherm elementen
         const gameCategory = document.getElementById('gameCategory');
@@ -519,7 +552,7 @@
         // GLOBALE SPEL STATUS
         let players = [];
         let currentPlayerIndex = 0;
-        let selectedCategory = 'Borrel Pulse'; // Default
+        let selectedCategory = ''; 
         const TOTAL_BOARD_SQUARES = 25; 
         
         // KLEUR PALET
@@ -537,6 +570,18 @@
             };
         }
 
+        function resetGameData() {
+            players = [];
+            currentPlayerIndex = 0;
+            selectedCategory = '';
+            // Beschikbare kleuren opnieuw vullen
+            availableColors = [
+                '#ff4081', '#00bcd4', '#ff8c00', '#4caf50', '#9c27b0', '#ffeb3b', '#3f51b5'
+            ];
+            playersList.innerHTML = ''; // Leeg de spelerslijst
+        }
+
+
         // --- NAVIGATIE LOGICA ---
         
         function showScreen(screenToShow, screenToHide) {
@@ -552,27 +597,69 @@
             screenToShow.style.opacity = '1';
             screenToShow.style.position = 'relative';
 
-            backButton.style.display = (screenToShow === mainScreen) ? 'none' : 'block';
+            // Back button logica bijgewerkt voor de nieuwe flow
+            if (screenToShow === startScreen) {
+                 backButton.style.display = 'none';
+            } else if (screenToShow === playersScreen) {
+                 backButton.style.display = 'block';
+            } else if (screenToShow === categoryScreen) {
+                 backButton.style.display = 'block';
+            } else if (screenToShow === gameScreen) {
+                 backButton.style.display = 'block';
+            }
         }
 
         goToPlayersButton.addEventListener('click', () => {
-            showScreen(playersScreen, mainScreen);
+            showScreen(playersScreen, startScreen);
             nameInput.focus();
         });
 
+        goToCategoryButton.addEventListener('click', () => {
+            const listItems = Array.from(playersList.children);
+            
+            if (listItems.length < 2) {
+                alert("Je hebt minimaal 2 spelers nodig om een categorie te kiezen.");
+                return;
+            }
+            
+            // Bouw de definitieve spelerslijst wanneer we naar het categorie scherm gaan
+            players = listItems.map(li => {
+                const name = li.querySelector('.player-name').textContent;
+                const color = li.getAttribute('data-color');
+                return getPlayerObject(name, color);
+            });
+            
+            showScreen(categoryScreen, playersScreen);
+        });
+
+        // Event listener voor de categorie knoppen (start het spel)
+        startGameTriggers.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault(); 
+                selectedCategory = this.getAttribute('data-category');
+                
+                currentPlayerIndex = 0;
+                initializeGameScreen();
+                showScreen(gameScreen, categoryScreen);
+            });
+        });
+
+
         backButton.addEventListener('click', () => {
-            if (gameScreen.classList.contains('show')) {
-                 if (confirm("Weet je zeker dat je het spel wilt stoppen en terugkeren naar het Hoofdscherm?")) {
-                     showScreen(mainScreen, gameScreen);
-                     players = []; // Reset spelers
-                     // Beschikbare kleuren opnieuw vullen
-                     availableColors = ['#ff4081', '#00bcd4', '#ff8c00', '#4caf50', '#9c27b0', '#ffeb3b', '#3f51b5'];
-                     playersList.innerHTML = ''; // Leeg de spelerslijst
+             if (gameScreen.classList.contains('show')) {
+                 if (confirm("Weet je zeker dat je het spel wilt stoppen en terugkeren naar het Categorie scherm?")) {
+                     resetGameData(); // Spel data wordt hier gereset
+                     showScreen(startScreen, gameScreen); 
                  }
-            } else {
-                 showScreen(mainScreen, playersScreen);
+            } else if (categoryScreen.classList.contains('show')) {
+                 // Van Categorie terug naar Spelers
+                 showScreen(playersScreen, categoryScreen);
+            } else if (playersScreen.classList.contains('show')) {
+                 // Van Spelers terug naar Start
+                 showScreen(startScreen, playersScreen);
             }
         });
+
 
         // --- DEELNEMERS LOGICA ---
         
@@ -585,8 +672,17 @@
                     return; 
                 }
                 
-                const randomIndex = Math.floor(Math.random() * availableColors.length);
-                const selectedColor = availableColors.splice(randomIndex, 1)[0]; 
+                // Zorg ervoor dat de kleuren die in de lijst staan, niet worden gebruikt in de volgende beurt
+                const currentColors = Array.from(playersList.children).map(li => li.getAttribute('data-color'));
+                const availableForNew = availableColors.filter(c => !currentColors.includes(c));
+
+
+                const randomIndex = Math.floor(Math.random() * availableForNew.length);
+                const selectedColor = availableForNew[randomIndex];
+                
+                // Verwijder de kleur uit de beschikbare set
+                availableColors = availableColors.filter(c => c !== selectedColor);
+
                 
                 const listItem = document.createElement('li');
                 listItem.className = 'player-item';
@@ -604,7 +700,9 @@
                 
                 removeButton.addEventListener('click', function() {
                     const colorToRemove = listItem.getAttribute('data-color');
-                    availableColors.push(colorToRemove); 
+                    if (!availableColors.includes(colorToRemove)) {
+                        availableColors.push(colorToRemove); // Voeg de kleur terug aan de pool
+                    }
                     playersList.removeChild(listItem);
                 });
                 
@@ -624,40 +722,11 @@
             }
         });
         
-        // Vangt de geselecteerde categorie op
-        document.getElementById('borrelButton').addEventListener('click', function() {
-            selectedCategory = this.getAttribute('data-category');
-        });
-        document.getElementById('deepTalkButton').addEventListener('click', function() {
-            selectedCategory = this.getAttribute('data-category');
-        });
-
-
-        startGameButton.addEventListener('click', () => {
-            const listItems = Array.from(playersList.children);
-            
-            if (listItems.length < 2) {
-                alert("Je hebt minimaal 2 spelers nodig om te beginnen.");
-                return;
-            }
-
-            // Bouw de definitieve spelerslijst
-            players = listItems.map(li => {
-                const name = li.querySelector('.player-name').textContent;
-                const color = li.getAttribute('data-color');
-                return getPlayerObject(name, color);
-            });
-            
-            currentPlayerIndex = 0;
-            
-            initializeGameScreen();
-            showScreen(gameScreen, playersScreen);
-        });
         
         // --- SPELSCHERM FUNCTIES ---
 
         function initializeGameScreen() {
-            gameCategory.textContent = selectedCategory;
+            gameCategory.textContent = selectedCategory.toUpperCase();
             drawGameBoard();
             updateCurrentPlayerUI();
             resetQuestionContainer();
@@ -688,7 +757,7 @@
                 square.id = `square-${i}`;
                 square.textContent = `Vakje ${i}`;
                 
-                if (i === 5) {
+                if (i % 5 === 0) {
                     square.textContent = "Slokken! 🥃";
                     square.style.backgroundColor = '#ff4081';
                 } else if (i === 10) {
@@ -771,7 +840,7 @@
                  player.position = 1;
                  updateBoardTokens();
              } 
-             // Hier komt de logica voor andere speciale vakjes
+             // Andere vakjes...
         }
         
         // --- AI LOGICA (Echte API Call) ---
@@ -800,7 +869,6 @@
                 });
 
                 if (!response.ok) {
-                    // Gooi een fout met de status, zodat we de oorzaak kunnen achterhalen
                     const errorBody = await response.json();
                     throw new Error(`HTTP error! Status: ${response.status} - ${errorBody.error || response.statusText}`);
                 }
@@ -817,7 +885,6 @@
             } catch (error) {
                 console.error("Fout bij genereren van vraag:", error);
                 questionTypeEl.textContent = 'FOUT';
-                // Toon een specifieker bericht als we de fout uit de API-call konden halen
                 questionTextEl.textContent = `Kon geen vraag genereren. Controleer of de API-sleutel correct is ingesteld in Vercel. Details: ${error.message}`;
             } finally {
                 completedButton.disabled = false;
@@ -830,7 +897,5 @@
         consequenceButton.disabled = true;
         
     </script>
-
-<script src="https://static.app/js/static.js" type="text/javascript"></script>
 </body>
 </html>
