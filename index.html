@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULSE: Het Interactieve Ganzenbord</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        #game-setup, #game-board {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #007bff;
+        }
+        /* Setup Style */
+        #player-input-section {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        #player-list {
+            list-style: none;
+            padding: 0;
+        }
+        #player-list li {
+            background: #e9ecef;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* Board Style */
+        #board-display {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 5px;
+            margin: 20px 0;
+            border: 2px solid #333;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .square {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background: #eee;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+            position: relative;
+            box-sizing: border-box;
+            border-radius: 3px;
+        }
+        .start { background-color: #4CAF50; color: white; font-weight: bold; }
+        .end { background-color: #F44336; color: white; font-weight: bold; }
+        .challenge { background-color: #ffc107; } /* Geel: Uitdaging/Vraag */
+        .penalty { background-color: #dc3545; color: white; } /* Rood: Straf */
+        .bonus { background-color: #28a745; color: white; } /* Groen: Bonus */
+        
+        .player-token {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 2px solid white;
+            z-index: 10;
+            opacity: 0.9;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+        /* Turn and Action Style */
+        #turn-info {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+        }
+        #action-section {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #question-area {
+            margin-top: 15px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+            min-height: 50px;
+        }
+        #action-buttons button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .dice-button { background-color: #17a2b8; color: white; }
+        .generate-button { background-color: #ff8c00; color: white; }
+        .complete-button { background-color: #28a745; color: white; }
+        .consequence-button { background-color: #dc3545; color: white; }
+    </style>
+</head>
+<body>
+
+    <div id="game-setup">
+        <h1>PULSE - Spelvoorbereiding</h1>
+        <hr>
+        <h2>1. Spelers Toevoegen</h2>
+        <div id="player-input-section">
+            <input type="text" id="player-name" placeholder="Naam speler" style="flex-grow: 1;">
+            <button onclick="addPlayer()" style="background-color: #007bff; color: white;">Voeg Speler toe</button>
+        </div>
+        <ul id="player-list"></ul>
+        <p id="player-status"></p>
+
+        <h2>2. Thema Kiezen</h2>
+        <select id="theme-selector">
+            <option value="Algemene Kennis">Algemene Kennis</option>
+            <option value="Popcultuur en Media">Popcultuur en Media</option>
+            <option value="Wetenschap en Technologie">Wetenschap en Technologie</option>
+            <option value="Geschiedenis en Geografie">Geschiedenis en Geografie</option>
+        </select>
+        
+        <hr>
+        <div style="text-align: center; margin-top: 20px;">
+            <button onclick="startGame()" style="background-color: #28a745; color: white; padding: 15px 30px; font-size: 1.2em;">START HET SPEL</button>
+        </div>
+    </div>
+
+    <div id="game-board" style="display: none;">
+        <h1>PULSE - Het Ganzenbord</h1>
+        <div id="turn-info"></div>
+        <div id="board-display"></div>
+        
+        <div id="action-section">
+            <button id="roll-dice-btn" class="dice-button" onclick="rollDice()">Gooi Dobbelsteen</button>
+
+            <div id="action-prompt" style="display: none;">
+                <h3>Vraag voor <span id="current-player-name"></span>:</h3>
+                <div id="question-area">Druk op 'Vraag Genereren' om te beginnen.</div>
+                
+                <button id="generate-question-btn" class="generate-button" onclick="generateQuestion()">Vraag Genereren</button>
+                
+                <div id="action-buttons" style="display: none;">
+                    <button class="complete-button" onclick="handleConsequence(true)">Vraag Voltooid (Ga Door)</button>
+                    <button class="consequence-button" onclick="handleConsequence(false)">Consequentie Accepteren (Sla Beurt Over)</button>
+                </div>
+            </div>
+        </div>
+        <p id="game-log" style="margin-top: 20px; min-height: 20px;"></p>
+    </div>
+
+    <script>
+        // GLOBAL STATE
+        let players = [];
+        let currentPlayerIndex = 0;
+        const BOARD_SIZE = 30; // 30 velden in totaal (1-30)
+        let isDiceRolled = false;
+
+        // PLAYER MANAGEMENT
+        function addPlayer() {
+            const nameInput = document.getElementById('player-name');
+            const name = nameInput.value.trim();
+            if (name && players.length < 6) {
+                const color = getRandomColor();
+                players.push({
+                    name: name,
+                    position: 1,
+                    color: color,
+                    skipTurns: 0,
+                    score: 0
+                });
+                renderPlayerList();
+                nameInput.value = '';
+                document.getElementById('player-status').textContent = `Spelers: ${players.length}/6`;
+            } else if (players.length >= 6) {
+                document.getElementById('player-status').textContent = 'Maximaal 6 spelers toegestaan.';
+            }
+        }
+
+        function getRandomColor() {
+            const colors = ['#FF5733', '#33FF57', '#3357FF', '#FF33FF', '#33FFFF', '#FFC300'];
+            return colors[players.length % colors.length];
+        }
+
+        function renderPlayerList() {
+            const list = document.getElementById('player-list');
+            list.innerHTML = '';
+            players.forEach(player => {
+                const li = document.createElement('li');
+                li.innerHTML = `<span style="color: ${player.color}; font-weight: bold;">${player.name}</span> (Positie: ${player.position}) 
+                                <button onclick="removePlayer('${player.name}')" style="background: none; border: none; color: #dc3545;">&times;</button>`;
+                list.appendChild(li);
+            });
+        }
+
+        function removePlayer(name) {
+            players = players.filter(p => p.name !== name);
+            renderPlayerList();
+            document.getElementById('player-status').textContent = `Spelers: ${players.length}/6`;
+        }
+
+        // GAME START AND BOARD RENDERING
+        function startGame() {
+            if (players.length < 2) {
+                alert("Je hebt minimaal 2 spelers nodig om te starten!");
+                return;
+            }
+            document.getElementById('game-setup').style.display = 'none';
+            document.getElementById('game-board').style.display = 'block';
+            renderBoard();
+            updateTurnInfo();
+        }
+
+        function renderBoard() {
+            const board = document.getElementById('board-display');
+            board.innerHTML = '';
+            for (let i = 1; i <= BOARD_SIZE; i++) {
+                const square = document.createElement('div');
+                square.classList.add('square');
+                square.id = `square-${i}`;
+                square.textContent = i;
+                
+                // Speciale velden
+                if (i === 1) { square.classList.add('start'); square.textContent = 'START'; }
+                if (i === BOARD_SIZE) { square.classList.add('end'); square.textContent = 'FINISH'; }
+                if ([5, 15, 25].includes(i)) { square.classList.add('challenge'); square.textContent += ' (?)'; }
+                if (i === 10) { square.classList.add('penalty'); square.textContent += ' (-)'; }
+                if (i === 20) { square.classList.add('bonus'); square.textContent += ' (+2)'; }
+                
+                board.appendChild(square);
+            }
+            updatePlayerPositions();
+        }
+
+        function updatePlayerPositions() {
+            document.querySelectorAll('.player-token').forEach(token => token.remove());
+
+            players.forEach((player, pIndex) => {
+                const square = document.getElementById(`square-${player.position}`);
+                if (square) {
+                    const token = document.createElement('div');
+                    token.classList.add('player-token');
+                    token.style.backgroundColor = player.color;
+                    
+                    // Kleine offset om tokens te scheiden
+                    const offset = pIndex * 5; 
+                    token.style.left = `${5 + offset}px`;
+                    
+                    square.appendChild(token);
+                }
+            });
+            renderPlayerList(); // Update de lijst in de setup (voor info)
+        }
+
+        function updateTurnInfo() {
+            const player = players[currentPlayerIndex];
+            document.getElementById('turn-info').innerHTML = `Aan de beurt: <span style="color: ${player.color}; font-weight: bold;">${player.name}</span> (Positie: ${player.position})`;
+            document.getElementById('current-player-name').textContent = player.name;
+            
+            // Verberg/toon knoppen
+            document.getElementById('roll-dice-btn').style.display = isDiceRolled ? 'none' : 'block';
+            document.getElementById('action-prompt').style.display = 'none';
+        }
+
+        function logGameAction(message) {
+            document.getElementById('game-log').textContent = message;
+        }
+
+        // GAME LOGIC
+        function rollDice() {
+            if (isDiceRolled) return;
+            const diceRoll = Math.floor(Math.random() * 6) + 1;
+            logGameAction(`${players[currentPlayerIndex].name} gooide een ${diceRoll}.`);
+            
+            movePlayer(diceRoll);
+            isDiceRolled = true;
+            document.getElementById('roll-dice-btn').style.display = 'none';
+        }
+
+        function movePlayer(steps) {
+            const player = players[currentPlayerIndex];
+            let newPosition = player.position + steps;
+
+            if (newPosition >= BOARD_SIZE) {
+                newPosition = BOARD_SIZE;
+                logGameAction(`${player.name} is gefinisht!`);
+                endGame(player);
+                return;
+            }
+            
+            player.position = newPosition;
+            updatePlayerPositions();
+            
+            checkSpecialSquare(player);
+        }
+
+        function checkSpecialSquare(player) {
+            const position = player.position;
+            const logElement = document.getElementById('game-log');
+
+            if ([5, 15, 25].includes(position)) {
+                logElement.textContent = `${player.name} landde op een Uitdagingsveld! Beantwoord de vraag of accepteer de consequentie.`;
+                showActionPrompt('challenge');
+            } else if (position === 10) {
+                logElement.textContent = `${player.name} landde op Veld 10 (Straf)! Sla de volgende beurt over.`;
+                player.skipTurns += 1;
+                endTurn();
+            } else if (position === 20) {
+                logElement.textContent = `${player.name} landde op Veld 20 (Bonus)! Ga 2 velden vooruit.`;
+                movePlayer(2); // Recursieve call, maar dit is een simpele move
+            } else {
+                endTurn();
+            }
+        }
+
+        function showActionPrompt(type) {
+            document.getElementById('action-prompt').style.display = 'block';
+            document.getElementById('generate-question-btn').style.display = 'block';
+            document.getElementById('action-buttons').style.display = 'none'; // Verberg actie knoppen totdat vraag geladen is
+            document.getElementById('question-area').textContent = "Vraag genereren...";
+        }
+
+        // GEMINI API INTEGRATION
+        async function generateQuestion() {
+            document.getElementById('generate-question-btn').disabled = true;
+            document.getElementById('question-area').textContent = "Bezig met genereren, even geduld...";
+
+            const player = players[currentPlayerIndex];
+            const theme = document.getElementById('theme-selector').value;
+            const prompt = `Je bent de spelleider van een ganzenbordspel genaamd PULSE. De speler, ${player.name}, is geland op een uitdagingsveld. Genereer een korte en unieke opdracht of vraag (maximaal 2 zinnen) binnen het thema "${theme}". De opdracht moet spannend en creatief zijn, niet puur kennis. Begin direct met de opdracht/vraag zonder inleiding.`;
+
+            try {
+                // De Vercel Serverless Function aanroepen
+                const response = await fetch('/api/generate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ prompt: prompt })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                
+                document.getElementById('question-area').textContent = data.text || "Fout bij genereren, probeer opnieuw.";
+                document.getElementById('generate-question-btn').style.display = 'none';
+                document.getElementById('action-buttons').style.display = 'block';
+
+            } catch (error) {
+                console.error("Fout bij AI-call:", error);
+                document.getElementById('question-area').textContent = `Fout bij AI-call: ${error.message}. Controleer de Vercel logs en API-sleutel.`;
+                document.getElementById('generate-question-btn').disabled = false;
+            }
+        }
+
+        function handleConsequence(isSuccessful) {
+            const player = players[currentPlayerIndex];
+            
+            if (isSuccessful) {
+                logGameAction(`${player.name} heeft de uitdaging voltooid en gaat door naar de volgende beurt!`);
+            } else {
+                logGameAction(`${player.name} accepteerde de consequentie en slaat 1 beurt over.`);
+                player.skipTurns += 1;
+            }
+            
+            // Reset de UI en ga naar de volgende beurt
+            document.getElementById('generate-question-btn').disabled = false;
+            endTurn();
+        }
+
+        function endTurn() {
+            // Check voor skip turns voor de huidige speler (telt de beurt die zojuist is afgerond)
+            if (players[currentPlayerIndex].skipTurns > 0) {
+                logGameAction(`${players[currentPlayerIndex].name} slaat de volgende beurt over (Nog ${players[currentPlayerIndex].skipTurns} beurt(en) over).`);
+                players[currentPlayerIndex].skipTurns -= 1;
+            } else {
+                // Ga naar de volgende speler (slaat spelers die moeten overslaan niet over)
+                currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
+            }
+            
+            // Reset voor de volgende beurt
+            isDiceRolled = false;
+            updateTurnInfo();
+            document.getElementById('action-prompt').style.display = 'none';
+            document.getElementById('generate-question-btn').style.display = 'block';
+            document.getElementById('action-buttons').style.display = 'none';
+        }
+
+        function endGame(winner) {
+            alert(`${winner.name} heeft gewonnen! Gefeliciteerd!`);
+            // Hier kun je logica toevoegen om het spel te resetten of te stoppen.
+        }
+        
+        // Initial call to render the list on load (though only needed after adding players)
+        document.addEventListener('DOMContentLoaded', () => {
+            renderPlayerList();
+        });
+    </script>
+</body>
+</html>
