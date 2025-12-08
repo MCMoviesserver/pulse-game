@@ -1,12 +1,17 @@
 {
   "name": "pulse-game",
   "version": "1.0.0",
-  "description": "A Gemini-powered drinking game.",
+  "type": "module", 
+  "description": "A Gemini powered social drinking game.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "vercel-build": "echo 'Statische deploy, skipping default Next.js build.'"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@google/genai": "^0.15.0"
+    "@google/genai": "^0.1.0"
   }
 }
