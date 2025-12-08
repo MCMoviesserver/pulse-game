@@ -1,4 +1,10 @@
 {
   "framework": null,
-  "buildCommand": "npm install && echo 'Static build success.'"
+  "buildCommand": "npm install && echo 'Static build success.'",
+  "rewrites": [
+    { 
+      "source": "/", 
+      "destination": "/index.html" 
+    }
+  ]
 }
