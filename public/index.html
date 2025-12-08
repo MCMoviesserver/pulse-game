@@ -55,7 +55,7 @@
             transition: opacity 0.5s ease-in-out; 
         }
 
-        #main-screen {
+        #start-screen {
             visibility: visible;
             opacity: 1;
             position: relative;
@@ -67,17 +67,25 @@
             position: relative !important;
         }
 
+        /* Terugknop styling fix */
         .back-button {
             position: absolute;
-            top: 20px;
-            left: 20px;
-            background: none;
+            top: 15px; /* Iets meer van de bovenkant */
+            left: 15px;
+            background: rgba(255, 255, 255, 0.15); /* Cloud/Wolk effect */
             border: none;
             color: white;
-            font-size: 24px;
+            font-size: 20px;
             cursor: pointer;
             z-index: 10;
-            opacity: 0.8;
+            opacity: 0.9;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         /* ====================================================================== */
@@ -90,21 +98,31 @@
             flex-direction: column;
             align-items: center;
             width: 100%;
+            justify-content: center; /* Zorgt voor verticale centrering van content */
         }
         
+        /* Header Fix: Centering and spacing */
         .header {
             text-align: center;
             margin-bottom: 40px; 
             padding-top: 20px;
             width: 100%;
-            flex-grow: 1; /* Zorgt dat de header centraal staat op de main screen */
+            flex-grow: 1; 
             display: flex;
             flex-direction: column;
             justify-content: center;
+            padding-top: 100px; /* Meer ruimte van boven op de startschermen */
+        }
+
+        /* Header op spelscherm/category mag minder ruimte innemen */
+        #game-screen .header, #category-screen .header, #players-screen .header {
+            flex-grow: 0; 
+            padding-top: 50px; /* Iets lager dan de terugknop */
+            margin-bottom: 25px; /* Kleinere marge tussen header en content */
         }
         
         .title {
-            font-size: 48px; /* Groter op home screen */
+            font-size: 60px; /* Groter op home screen */
             font-weight: 800;
             letter-spacing: 4px;
             text-transform: uppercase;
@@ -112,8 +130,9 @@
             text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff, 0 0 20px #ff00ff;
         }
         
+        /* Nieuwe, strakkere slogan */
         .subtitle {
-            font-size: 16px;
+            font-size: 20px; 
             font-weight: 500;
             letter-spacing: 1px;
             opacity: 0.9;
@@ -121,12 +140,11 @@
             text-shadow: none;
         }
 
-        /* Navigatie Buttons (Start / Categorie) */
         .button-container {
             width: 100%;
             max-width: 340px;
             text-align: center;
-            margin-bottom: 40px; /* Alleen voor de knoppen onderaan */
+            margin-bottom: 20vh; /* Zorgt dat de startknop laag gecentreerd staat */
         }
 
         .start-button {
@@ -144,7 +162,7 @@
             transition: transform 0.2s;
         }
         
-        /* Categorie Button Styling FIX */
+        /* Categorie Button Styling */
         .button-stack {
             display: flex;
             flex-direction: column;
@@ -154,7 +172,7 @@
         }
 
         .app-button {
-            height: 140px; /* Iets kleiner om ze beter te laten passen */
+            height: 140px; 
             padding: 25px;
             border-radius: 30px;
             color: white;
@@ -167,14 +185,13 @@
             cursor: pointer;
         }
         
-        /* Nieuwe stijlen voor de teksten en emoji's in de categorie knoppen */
         .app-button .icon {
-            font-size: 32px; /* Emoji's groter */
+            font-size: 32px; 
             margin-bottom: 5px;
         }
 
         .app-button .button-title {
-            font-size: 24px; /* Title groter en vetter */
+            font-size: 24px; 
             font-weight: 800;
             letter-spacing: 1px;
             text-transform: uppercase;
@@ -207,17 +224,18 @@
             font-size: 16px;
         }
 
+        /* Toevoegen knop FIX: Alleen plusje */
         .add-button {
-            background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
-            color: #1a1a2e;
-            padding: 15px;
+            background: none; /* Geen achtergrond */
+            color: #4CAF50; /* Groen plusje */
+            padding: 0;
             border-radius: 50%;
             width: 50px;
             height: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
-            border: none;
+            border: 2px solid #4CAF50; /* Groene cirkelrand */
             font-size: 28px;
             font-weight: 800;
             cursor: pointer;
@@ -262,6 +280,7 @@
             cursor: pointer;
         }
 
+        /* "KIES CATEGORIE" knop FIX: Nu "DOORGAAN" */
         .start-game-button {
             background: linear-gradient(145deg, #00bcd4 0%, #3f51b5 100%);
             color: white;
@@ -418,15 +437,15 @@
 
     <div id="app" class="app-container">
 
-        <button id="backButton" class="back-button" style="display: none;">&larr;</button>
+        <button id="backButton" class="back-button" style="display: none;">🏠</button>
 
         <div id="start-screen" class="screen show">
              <div class="main-content">
-                <div class="header" style="flex-grow: 1;">
-                    <div class="title" style="font-size: 60px;">PULSE</div>
-                    <div class="subtitle" style="font-size: 20px;">Jouw Verhaal, Onze Uitdaging</div>
+                <div class="header">
+                    <div class="title">PULSE</div>
+                    <div class="subtitle">Verhoog de Hartslag, Start het Spel.</div>
                 </div>
-                <div class="button-container" style="margin-bottom: 20px;">
+                <div class="button-container">
                     <button id="goToPlayersButton" class="start-button">
                         START HET SPEL
                     </button>
@@ -435,7 +454,7 @@
         </div>
         <div id="players-screen" class="screen">
             <div class="players-content">
-                <div class="header" style="margin-bottom: 20px; padding-top: 10px; flex-grow: 0;">
+                <div class="header">
                     <div class="title" style="font-size: 32px; letter-spacing: 2px;">WIE SPEELT MEE?</div>
                     <div class="subtitle">Voeg alle namen toe die meespelen (min. 2).</div>
                 </div>
@@ -452,7 +471,7 @@
 
                 <div class="button-container" style="margin-bottom: 0; padding-top: 10px;">
                     <button id="goToCategoryButton" class="start-game-button">
-                        KIES CATEGORIE
+                        DOORGAAN
                     </button>
                 </div>
             </div>
@@ -460,7 +479,7 @@
 
         <div id="category-screen" class="screen">
              <div class="category-content">
-                <div class="header" style="flex-grow: 0;">
+                <div class="header">
                     <div class="title" style="font-size: 32px; letter-spacing: 2px;">KIES CATEGORIE</div>
                     <div class="subtitle">Selecteer de puls van jullie avond.</div>
                 </div>
@@ -486,7 +505,7 @@
         </div>
 
         <div id="game-screen" class="screen">
-            <div class="header">
+            <div class="header" style="padding-top: 5px;">
                 <div class="title" style="font-size: 32px; letter-spacing: 2px;">PULSE</div>
                 <div class="subtitle" id="gameCategory"></div> </div>
             
@@ -524,14 +543,14 @@
     
     <script>
         // Bestaande elementen
-        const startScreen = document.getElementById('start-screen'); // Nieuw
+        const startScreen = document.getElementById('start-screen');
         const playersScreen = document.getElementById('players-screen');
-        const categoryScreen = document.getElementById('category-screen'); // Nieuw
+        const categoryScreen = document.getElementById('category-screen'); 
         const gameScreen = document.getElementById('game-screen'); 
         
         const goToPlayersButton = document.getElementById('goToPlayersButton');
-        const goToCategoryButton = document.getElementById('goToCategoryButton'); // Nieuw
-        const startGameTriggers = document.querySelectorAll('.start-game-trigger'); // Nieuwe triggers
+        const goToCategoryButton = document.getElementById('goToCategoryButton');
+        const startGameTriggers = document.querySelectorAll('.start-game-trigger');
         
         const backButton = document.getElementById('backButton');
         const addButton = document.getElementById('addButton');
@@ -600,11 +619,7 @@
             // Back button logica bijgewerkt voor de nieuwe flow
             if (screenToShow === startScreen) {
                  backButton.style.display = 'none';
-            } else if (screenToShow === playersScreen) {
-                 backButton.style.display = 'block';
-            } else if (screenToShow === categoryScreen) {
-                 backButton.style.display = 'block';
-            } else if (screenToShow === gameScreen) {
+            } else {
                  backButton.style.display = 'block';
             }
         }
@@ -647,8 +662,8 @@
 
         backButton.addEventListener('click', () => {
              if (gameScreen.classList.contains('show')) {
-                 if (confirm("Weet je zeker dat je het spel wilt stoppen en terugkeren naar het Categorie scherm?")) {
-                     resetGameData(); // Spel data wordt hier gereset
+                 if (confirm("Weet je zeker dat je het spel wilt stoppen en terugkeren naar het Hoofdscherm?")) {
+                     resetGameData(); 
                      showScreen(startScreen, gameScreen); 
                  }
             } else if (categoryScreen.classList.contains('show')) {
@@ -667,22 +682,18 @@
             const name = nameInput.value.trim();
             
             if (name) {
-                if (availableColors.length === 0) {
-                    alert("Alle unieke kleuren zijn in gebruik (Max 7 spelers).");
+                if (Array.from(playersList.children).length >= 7) {
+                    alert("Maximale aantal spelers (7) bereikt.");
                     return; 
                 }
-                
-                // Zorg ervoor dat de kleuren die in de lijst staan, niet worden gebruikt in de volgende beurt
-                const currentColors = Array.from(playersList.children).map(li => li.getAttribute('data-color'));
-                const availableForNew = availableColors.filter(c => !currentColors.includes(c));
 
+                // Filter beschikbare kleuren op basis van wat al in de lijst staat
+                const usedColors = Array.from(playersList.children).map(li => li.getAttribute('data-color'));
+                const availableForNew = availableColors.filter(c => !usedColors.includes(c));
 
                 const randomIndex = Math.floor(Math.random() * availableForNew.length);
                 const selectedColor = availableForNew[randomIndex];
                 
-                // Verwijder de kleur uit de beschikbare set
-                availableColors = availableColors.filter(c => c !== selectedColor);
-
                 
                 const listItem = document.createElement('li');
                 listItem.className = 'player-item';
@@ -699,10 +710,6 @@
                 removeButton.textContent = 'X';
                 
                 removeButton.addEventListener('click', function() {
-                    const colorToRemove = listItem.getAttribute('data-color');
-                    if (!availableColors.includes(colorToRemove)) {
-                        availableColors.push(colorToRemove); // Voeg de kleur terug aan de pool
-                    }
                     playersList.removeChild(listItem);
                 });
                 
@@ -760,7 +767,7 @@
                 if (i % 5 === 0) {
                     square.textContent = "Slokken! 🥃";
                     square.style.backgroundColor = '#ff4081';
-                } else if (i === 10) {
+                } else if (i === 10 || i === 20) {
                     square.textContent = "TERUG naar 1! ↩️";
                     square.style.backgroundColor = '#3f51b5';
                 }
@@ -835,7 +842,7 @@
         
         function checkSquareEffect(player) {
              const position = player.position;
-             if (position === 10) {
+             if (position === 10 || position === 20) {
                  alert(`${player.name}, Je bent op het TERUG naar 1 vakje beland!`);
                  player.position = 1;
                  updateBoardTokens();
