@@ -1,0 +1,15 @@
+{
+  "installCommand": "npm install",
+  "builds": [
+    { 
+      "src": "../api/generate.js", 
+      "use": "@vercel/node" 
+    }
+  ],
+  "rewrites": [
+    { 
+      "source": "/", 
+      "destination": "/index.html" 
+    }
+  ]
+}
