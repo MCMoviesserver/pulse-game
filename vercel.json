@@ -6,10 +6,6 @@
       "use": "@vercel/node" 
     }
   ],
-  "rewrites": [
-    { 
-      "source": "/", 
-      "destination": "/index.html" 
-    }
-  ]
+  // De 'rewrites' sectie is verwijderd om automatische index.html detectie te forceren.
+  "rewrites": []
 }
