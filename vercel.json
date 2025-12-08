@@ -2,10 +2,6 @@
   "installCommand": "npm install",
   "builds": [
     { 
-      "src": "index.html", 
-      "use": "@vercel/static-html" 
-    },
-    { 
       "src": "api/generate.js", 
       "use": "@vercel/node" 
     }
