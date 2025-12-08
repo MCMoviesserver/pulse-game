@@ -1,6 +1,22 @@
 {
-  "framework": null,
-  "buildCommand": "npm install && echo 'Static build success.'",
+  // 1. Installatie: Voert npm install uit
+  "installCommand": "npm install",
+  
+  // 2. Build: Vertelt Vercel precies welke bestanden wat zijn
+  "builds": [
+    { 
+      // Behandel de index.html als een statisch HTML-bestand
+      "src": "index.html", 
+      "use": "@vercel/static-html" 
+    },
+    { 
+      // Behandel api/generate.js als een Serverless Function (Node)
+      "src": "api/generate.js", 
+      "use": "@vercel/node" 
+    }
+  ],
+  
+  // 3. Routes: Zorgt ervoor dat de hoofdpagina naar index.html wijst
   "rewrites": [
     { 
       "source": "/", 
