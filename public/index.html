@@ -559,11 +559,11 @@
         backButton.addEventListener('click', () => {
             if (gameScreen.classList.contains('show')) {
                  if (confirm("Weet je zeker dat je het spel wilt stoppen en terugkeren naar het Hoofdscherm?")) {
-                    showScreen(mainScreen, gameScreen);
-                    players = []; // Reset spelers
-                    // Beschikbare kleuren opnieuw vullen
-                    availableColors = ['#ff4081', '#00bcd4', '#ff8c00', '#4caf50', '#9c27b0', '#ffeb3b', '#3f51b5'];
-                    playersList.innerHTML = ''; // Leeg de spelerslijst
+                     showScreen(mainScreen, gameScreen);
+                     players = []; // Reset spelers
+                     // Beschikbare kleuren opnieuw vullen
+                     availableColors = ['#ff4081', '#00bcd4', '#ff8c00', '#4caf50', '#9c27b0', '#ffeb3b', '#3f51b5'];
+                     playersList.innerHTML = ''; // Leeg de spelerslijst
                  }
             } else {
                  showScreen(mainScreen, playersScreen);
@@ -770,35 +770,52 @@
              // Hier komt de logica voor andere speciale vakjes
         }
         
-        // --- AI LOGICA (Placeholder) ---
+        // --- AI LOGICA (Echte API Call) ---
         
         generateQuestionButton.addEventListener('click', async () => {
-             generateQuestionButton.disabled = true;
-             
-             questionTypeEl.textContent = 'AI WERKT...';
-             questionTextEl.textContent = 'De Gemini API is bezig met het genereren van een unieke vraag/opdracht...';
-             
-             // --- PLAATS HIER DE ECHTE GEMINI API CALL ---
-             
-             // Placeholder voor de API call
-             await new Promise(resolve => setTimeout(resolve, 1500)); 
-             
-             const fakeApiResponse = {
-                 type: selectedCategory === 'Borrel Pulse' ? 'DARE OF SHOT' : 'DEEP DIVE',
-                 question: `**${players[currentPlayerIndex].name}**, wat is het meest gênante dat je ooit in het openbaar hebt geroepen?`,
-                 consequence: '3 slokken bier of een halve shot als je niet antwoordt.' 
-             };
-             
-             // Toon het resultaat
-             questionTypeEl.textContent = fakeApiResponse.type;
-             questionTextEl.innerHTML = `
-                ${fakeApiResponse.question} 
-                <br><br> 
-                <span style="font-size: 18px; font-weight: 700; color: #ffeb3b;">*Consequentie: ${fakeApiResponse.consequence}*</span>
-             `;
-             
-             completedButton.disabled = false;
-             consequenceButton.disabled = false;
+            generateQuestionButton.disabled = true;
+            
+            questionTypeEl.textContent = 'GENEREREN...'; 
+            questionTextEl.textContent = 'Het spel bedenkt een unieke Vraag/Opdracht...';
+            
+            const currentPlayer = players[currentPlayerIndex].name;
+            const contextPlayers = players.map(p => p.name).join(', ');
+
+            try {
+                // Echte API-oproep naar onze Vercel Serverless Functie (api/generate.js)
+                const response = await fetch('/api/generate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        category: selectedCategory,
+                        currentPlayer: currentPlayer,
+                        contextPlayers: contextPlayers 
+                    }),
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                const apiResponse = await response.json();
+
+                // Toon het resultaat
+                questionTypeEl.textContent = apiResponse.type || selectedCategory.toUpperCase();
+                questionTextEl.innerHTML = `
+                    ${apiResponse.question} 
+                    <br><br> 
+                    <span style="font-size: 18px; font-weight: 700; color: #ffeb3b;">*Consequentie: ${apiResponse.consequence || 'Onbekend'}*</span>
+                `;
+            } catch (error) {
+                console.error("Fout bij genereren van vraag:", error);
+                questionTypeEl.textContent = 'FOUT';
+                questionTextEl.textContent = 'Kon geen vraag genereren. Controleer of de API-sleutel correct is ingesteld in Vercel.';
+            } finally {
+                completedButton.disabled = false;
+                consequenceButton.disabled = false;
+            }
         });
 
         // Initialiseer de game buttons op disabled totdat een vraag is geladen
