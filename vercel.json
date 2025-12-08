@@ -2,12 +2,10 @@
   "installCommand": "npm install",
   "builds": [
     { 
-      // Behandel de index.html als een statisch HTML-bestand
       "src": "index.html", 
       "use": "@vercel/static-html" 
     },
     { 
-      // Behandel api/generate.js als een Serverless Function (Node)
       "src": "api/generate.js", 
       "use": "@vercel/node" 
     }
