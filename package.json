@@ -1,0 +1,12 @@
+{
+  "name": "pulse-game",
+  "version": "1.0.0",
+  "description": "A Gemini-powered drinking game.",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo 'Dit is een statische app met serverless functions.'"
+  },
+  "dependencies": {
+    "@google/genai": "^0.1.0"
+  }
+}
