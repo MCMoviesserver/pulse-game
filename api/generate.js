@@ -51,13 +51,12 @@ module.exports = async (req, res) => {
             contents: prompt
         });
 
-        // Parseer en stuur de AI-respons terug
-        // LET OP: Gebruik de inhoud van 'text', Gemini kan soms extra quotes toevoegen.
+        // Robuuste JSON parsing om formatting problemen van de AI op te vangen
         let jsonResponse;
         try {
-             jsonResponse = JSON.parse(response.text.trim().replace(/^```json|```$/g, ''));
+             const cleanText = response.text.trim().replace(/^```json|```$/g, '');
+             jsonResponse = JSON.parse(cleanText);
         } catch (e) {
-             // Fallback voor het geval Gemini niet perfect JSON levert
              console.error("Kon JSON niet parsen:", response.text);
              throw new Error("Ongeldig JSON-formaat van AI.");
         }

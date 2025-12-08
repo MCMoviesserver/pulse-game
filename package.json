@@ -4,9 +4,9 @@
   "description": "A Gemini-powered drinking game.",
   "main": "index.js",
   "scripts": {
-    "start": "echo 'Dit is een statische app met serverless functions.'"
+    "vercel-build": "echo 'Statische deploy, skipping default Next.js build.'"
   },
   "dependencies": {
-    "@google/genai": "^0.15.0"  <-- VERSIE AANGEPAST!
+    "@google/genai": "^0.15.0"
   }
 }
