@@ -67,12 +67,12 @@
             position: relative !important;
         }
 
-        /* Terugknop styling fix */
+        /* Terugknop styling (cloud/huisje) */
         .back-button {
             position: absolute;
-            top: 15px; /* Iets meer van de bovenkant */
+            top: 15px; 
             left: 15px;
-            background: rgba(255, 255, 255, 0.15); /* Cloud/Wolk effect */
+            background: rgba(255, 255, 255, 0.15); 
             border: none;
             color: white;
             font-size: 20px;
@@ -98,10 +98,10 @@
             flex-direction: column;
             align-items: center;
             width: 100%;
-            justify-content: center; /* Zorgt voor verticale centrering van content */
+            justify-content: center; 
         }
         
-        /* Header Fix: Centering and spacing */
+        /* Header Fix: Spacing */
         .header {
             text-align: center;
             margin-bottom: 40px; 
@@ -111,18 +111,18 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-top: 100px; /* Meer ruimte van boven op de startschermen */
+            padding-top: 100px; 
         }
 
-        /* Header op spelscherm/category mag minder ruimte innemen */
+        /* Header op subschermen */
         #game-screen .header, #category-screen .header, #players-screen .header {
             flex-grow: 0; 
-            padding-top: 50px; /* Iets lager dan de terugknop */
-            margin-bottom: 25px; /* Kleinere marge tussen header en content */
+            padding-top: 50px; 
+            margin-bottom: 25px; 
         }
         
         .title {
-            font-size: 60px; /* Groter op home screen */
+            font-size: 60px; 
             font-weight: 800;
             letter-spacing: 4px;
             text-transform: uppercase;
@@ -130,7 +130,6 @@
             text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff, 0 0 20px #ff00ff;
         }
         
-        /* Nieuwe, strakkere slogan */
         .subtitle {
             font-size: 20px; 
             font-weight: 500;
@@ -144,7 +143,7 @@
             width: 100%;
             max-width: 340px;
             text-align: center;
-            margin-bottom: 20vh; /* Zorgt dat de startknop laag gecentreerd staat */
+            margin-bottom: 20vh; 
         }
 
         .start-button {
@@ -224,10 +223,9 @@
             font-size: 16px;
         }
 
-        /* Toevoegen knop FIX: Alleen plusje */
         .add-button {
-            background: none; /* Geen achtergrond */
-            color: #4CAF50; /* Groen plusje */
+            background: none; 
+            color: #4CAF50; 
             padding: 0;
             border-radius: 50%;
             width: 50px;
@@ -235,7 +233,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 2px solid #4CAF50; /* Groene cirkelrand */
+            border: 2px solid #4CAF50; 
             font-size: 28px;
             font-weight: 800;
             cursor: pointer;
@@ -280,7 +278,6 @@
             cursor: pointer;
         }
 
-        /* "KIES CATEGORIE" knop FIX: Nu "DOORGAAN" */
         .start-game-button {
             background: linear-gradient(145deg, #00bcd4 0%, #3f51b5 100%);
             color: white;
@@ -312,6 +309,17 @@
             padding: 10px 0;
             border-radius: 15px;
             background: rgba(255, 255, 255, 0.1);
+            display: flex; /* Zorgt dat beide elementen op één lijn staan */
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        /* AAN DE BEURT styling fix */
+        .player-turn-text {
+            font-size: 24px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.7); /* Lichter/Subtieler */
         }
 
         .current-player-name {
@@ -371,6 +379,7 @@
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
         }
 
+        /* Vraag container fix: minder aanwezig */
         .question-container {
             flex-grow: 1; 
             width: 100%;
@@ -385,28 +394,17 @@
             align-items: center;
             text-align: center;
             margin-bottom: 20px;
+            min-height: 100px; /* Zorgt dat het vak niet te klein is bij lege tekst */
         }
-
-        .question-type {
-            font-size: 18px;
-            font-weight: 700;
-            color: #00bcd4; 
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-
-        .question-text {
-            font-size: 24px;
-            font-weight: 600;
-            line-height: 1.4;
-        }
-
+        
+        /* Nieuwe stijl voor de actieknoppen onder spelbord */
         .action-buttons {
             display: flex;
             gap: 15px;
             width: 100%;
             max-width: 340px;
             padding-top: 10px;
+            margin-bottom: 20px; /* Ruimte onder de actieknoppen */
         }
 
         .action-button {
@@ -421,14 +419,21 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
         }
 
+        /* Groene knop (Opgelost) */
         #completedButton {
-            background: linear-gradient(135deg, #4CAF50, #66BB6A);
+            background: linear-gradient(135deg, #66BB6A, #4CAF50);
             color: white;
         }
 
+        /* Rode knop (Niet gedaan / Consequentie) */
         #consequenceButton {
-            background: linear-gradient(135deg, #ff4081, #ff8c00);
+            background: linear-gradient(135deg, #ff6b6b, #e74c3c);
             color: white;
+        }
+
+        #generateQuestionButton {
+             /* Zorgt dat de generate knop apart staat */
+             margin-top: 5px !important;
         }
         
     </style>
@@ -456,7 +461,7 @@
             <div class="players-content">
                 <div class="header">
                     <div class="title" style="font-size: 32px; letter-spacing: 2px;">WIE SPEELT MEE?</div>
-                    <div class="subtitle">Voeg alle namen toe die meespelen (min. 2).</div>
+                    <div class="subtitle">Voeg alle namen toe die meespelen.</div>
                 </div>
 
                 <div class="input-group">
@@ -510,29 +515,29 @@
                 <div class="subtitle" id="gameCategory"></div> </div>
             
             <div class="current-player-info">
-                AAN DE BEURT: <span id="currentPlayerName" class="current-player-name">...</span>
+                <span class="player-turn-text">AAN DE BEURT:</span> <span id="currentPlayerName" class="current-player-name">...</span>
             </div>
 
             <div class="game-board-container" id="gameBoardContainer">
                 </div>
 
-            <div class="question-container">
-                <div id="questionType" class="question-type">LADEN...</div>
-                <div id="questionText" class="question-text">
-                    Tik op 'Vraag Genereren' om te beginnen.
-                </div>
-            </div>
-
             <div class="action-buttons">
                 <button id="completedButton" class="action-button">
-                    ✅ OPGELOST (+1 Vakje)
+                    ✅ OPGELOST (+1)
                 </button>
                 <button id="consequenceButton" class="action-button">
-                    🍻 SLOK/SHOT (+0 Vakjes)
+                    ❌ NIET GEDAAN (SLOK)
                 </button>
             </div>
             
-            <div class="action-buttons" style="margin-top: 15px;">
+            <div class="question-container">
+                <div id="questionType" class="question-type"></div>
+                <div id="questionText" class="question-text" style="font-size: 20px;">
+                    Druk op 'VRAAG GENEREREN' om te starten.
+                </div>
+            </div>
+            
+            <div class="action-buttons" style="margin-top: 5px; margin-bottom: 0;">
                 <button id="generateQuestionButton" class="action-button" style="background: #3f51b5; color: white;">
                     VRAAG GENEREREN
                 </button>
@@ -584,26 +589,61 @@
             return {
                 name: name,
                 color: color,
-                position: 0, // Positie 0 is 'Start'
+                position: 0, 
                 score: 0 
             };
         }
 
-        function resetGameData() {
-            players = [];
-            currentPlayerIndex = 0;
-            selectedCategory = '';
-            // Beschikbare kleuren opnieuw vullen
+        // Functie om de spelersdata op te halen/op te slaan uit de DOM
+        function getPlayersFromDOM() {
+             const listItems = Array.from(playersList.children);
+             return listItems.map(li => {
+                const name = li.querySelector('.player-name').textContent;
+                const color = li.getAttribute('data-color');
+                return { name, color };
+            });
+        }
+        
+        // Functie om de lijst in de DOM te vullen (nodig bij terugnavigatie)
+        function drawPlayersToDOM(playerData) {
+            playersList.innerHTML = '';
+            // Reset de beschikbare kleuren, en voeg ze terug toe
             availableColors = [
                 '#ff4081', '#00bcd4', '#ff8c00', '#4caf50', '#9c27b0', '#ffeb3b', '#3f51b5'
             ];
-            playersList.innerHTML = ''; // Leeg de spelerslijst
+
+            playerData.forEach(p => {
+                 // Verwijder de kleur uit de beschikbare set
+                availableColors = availableColors.filter(c => c !== p.color);
+                
+                const listItem = document.createElement('li');
+                listItem.className = 'player-item';
+                listItem.style.borderLeft = `5px solid ${p.color}`;
+                listItem.setAttribute('data-color', p.color);
+                
+                const nameSpan = document.createElement('span');
+                nameSpan.className = 'player-name';
+                nameSpan.textContent = p.name;
+                nameSpan.style.color = p.color; 
+                
+                const removeButton = document.createElement('button');
+                removeButton.className = 'remove-button';
+                removeButton.textContent = 'X';
+                
+                removeButton.addEventListener('click', function() {
+                    playersList.removeChild(listItem);
+                });
+                
+                listItem.appendChild(nameSpan);
+                listItem.appendChild(removeButton);
+                playersList.appendChild(listItem);
+            });
         }
 
 
         // --- NAVIGATIE LOGICA ---
         
-        function showScreen(screenToShow, screenToHide) {
+        function showScreen(screenToShow) {
             document.querySelectorAll('.screen').forEach(s => {
                 s.classList.remove('show');
                 s.style.visibility = 'hidden';
@@ -616,16 +656,12 @@
             screenToShow.style.opacity = '1';
             screenToShow.style.position = 'relative';
 
-            // Back button logica bijgewerkt voor de nieuwe flow
-            if (screenToShow === startScreen) {
-                 backButton.style.display = 'none';
-            } else {
-                 backButton.style.display = 'block';
-            }
+            // Back button logica bijgewerkt 
+            backButton.style.display = (screenToShow === startScreen) ? 'none' : 'block';
         }
 
         goToPlayersButton.addEventListener('click', () => {
-            showScreen(playersScreen, startScreen);
+            showScreen(playersScreen);
             nameInput.focus();
         });
 
@@ -633,21 +669,20 @@
             const listItems = Array.from(playersList.children);
             
             if (listItems.length < 2) {
-                alert("Je hebt minimaal 2 spelers nodig om een categorie te kiezen.");
+                alert("Je hebt minimaal 2 spelers nodig om te beginnen.");
                 return;
             }
             
-            // Bouw de definitieve spelerslijst wanneer we naar het categorie scherm gaan
+            // Finaliseer de spelerslijst
             players = listItems.map(li => {
                 const name = li.querySelector('.player-name').textContent;
                 const color = li.getAttribute('data-color');
                 return getPlayerObject(name, color);
             });
             
-            showScreen(categoryScreen, playersScreen);
+            showScreen(categoryScreen);
         });
 
-        // Event listener voor de categorie knoppen (start het spel)
         startGameTriggers.forEach(button => {
             button.addEventListener('click', function(e) {
                 e.preventDefault(); 
@@ -655,7 +690,7 @@
                 
                 currentPlayerIndex = 0;
                 initializeGameScreen();
-                showScreen(gameScreen, categoryScreen);
+                showScreen(gameScreen);
             });
         });
 
@@ -663,15 +698,19 @@
         backButton.addEventListener('click', () => {
              if (gameScreen.classList.contains('show')) {
                  if (confirm("Weet je zeker dat je het spel wilt stoppen en terugkeren naar het Hoofdscherm?")) {
-                     resetGameData(); 
-                     showScreen(startScreen, gameScreen); 
+                     // Reset ALLE data als je uit de Game stapt
+                     players = [];
+                     showScreen(startScreen); 
                  }
             } else if (categoryScreen.classList.contains('show')) {
-                 // Van Categorie terug naar Spelers
-                 showScreen(playersScreen, categoryScreen);
+                 // Van Categorie terug naar Spelers (Players array blijft gevuld)
+                 drawPlayersToDOM(players); // Teken de spelers opnieuw
+                 showScreen(playersScreen);
             } else if (playersScreen.classList.contains('show')) {
                  // Van Spelers terug naar Start
-                 showScreen(startScreen, playersScreen);
+                 players = []; // Reset spelers als we terug naar de start gaan
+                 playersList.innerHTML = '';
+                 showScreen(startScreen);
             }
         });
 
@@ -687,7 +726,7 @@
                     return; 
                 }
 
-                // Filter beschikbare kleuren op basis van wat al in de lijst staat
+                // Bepaal de volgende vrije kleur
                 const usedColors = Array.from(playersList.children).map(li => li.getAttribute('data-color'));
                 const availableForNew = availableColors.filter(c => !usedColors.includes(c));
 
@@ -740,8 +779,9 @@
         }
         
         function resetQuestionContainer() {
-            questionTypeEl.textContent = 'Klaar om te beginnen?';
-            questionTextEl.textContent = 'Druk op "VRAAG GENEREREN" voor de eerste opdracht.';
+            // Minimalistische starttekst
+            questionTypeEl.textContent = '';
+            questionTextEl.innerHTML = '<span style="opacity: 0.6; font-style: italic; font-size: 20px;">Druk op \'VRAAG GENEREREN\' om te starten.</span>';
             completedButton.disabled = true;
             consequenceButton.disabled = true;
             generateQuestionButton.disabled = false;
@@ -764,12 +804,15 @@
                 square.id = `square-${i}`;
                 square.textContent = `Vakje ${i}`;
                 
-                if (i % 5 === 0) {
+                if (i % 5 === 0 && i !== 25) {
                     square.textContent = "Slokken! 🥃";
                     square.style.backgroundColor = '#ff4081';
                 } else if (i === 10 || i === 20) {
                     square.textContent = "TERUG naar 1! ↩️";
                     square.style.backgroundColor = '#3f51b5';
+                } else if (i === 25) {
+                    square.textContent = "FINISH! 🏆";
+                    square.style.backgroundColor = '#ffeb3b';
                 }
                 
                 gameBoardContainer.appendChild(square);
@@ -832,6 +875,7 @@
             if (newPosition >= TOTAL_BOARD_SQUARES) {
                 newPosition = TOTAL_BOARD_SQUARES;
                 alert(`Gefeliciteerd! ${player.name} heeft het spel gewonnen! 🎉`);
+                // Hier kun je een reset naar het startscherm triggeren
             }
             
             player.position = newPosition;
