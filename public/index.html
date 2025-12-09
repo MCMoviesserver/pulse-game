@@ -15,9 +15,8 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            /* FIX 1: Voorkom scrollen door body hoogte vast te zetten */
             min-height: 100vh;
-            background: #1a1a2e; /* Consistente achtergrondkleur */
+            background: #1a1a2e; 
             color: #ffffff;
             overflow-x: hidden;
             overflow-y: auto;
@@ -27,10 +26,9 @@
         .app-container {
             width: 100%;
             max-width: 500px;
-            /* FIX 1: Zorg dat de container de viewport vult */
             height: 100vh;
             min-height: 100vh;
-            background: #1a1a2e; /* Consistente achtergrondkleur */
+            background: #1a1a2e; 
             border-radius: 0;
             box-shadow: none;
             padding: 30px 20px;
@@ -40,7 +38,7 @@
             align-items: center;
             backdrop-filter: none;
             position: relative;
-            overflow-y: auto; /* Alleen scrollen in de container indien nodig */
+            overflow-y: auto; 
         }
         
         .screen {
@@ -370,20 +368,18 @@
             background: linear-gradient(135deg, #2a2a44, #1a1a2e);
         }
 
-        /* FIX 2: Spelerstoken offset (gestapeld effect) */
         .player-token {
             position: absolute;
-            top: 5px; /* Basis positie */
+            top: 5px; 
             width: 10px;
             height: 10px;
             border-radius: 50%;
             background-color: white; 
             border: 1px solid #1a1a2e;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-            /* Zorgt dat JS de 'right' positie kan bepalen */
         }
 
-        /* Vraag container */
+        /* Vraag container - NU ALTIJD ZICHTBAAR */
         .question-container {
             flex-grow: 1; 
             width: 100%;
@@ -392,15 +388,13 @@
             border-radius: 25px;
             padding: 25px;
             box-sizing: border-box;
-            display: flex;
+            display: flex; /* Blijft flex */
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             margin-bottom: 20px;
             min-height: 100px; 
-            /* FIX 3: Start verborgen */
-            display: none; 
         }
 
         .question-type {
@@ -547,6 +541,7 @@
             <div id="questionContainer" class="question-container">
                 <div id="questionType" class="question-type"></div>
                 <div id="questionText" class="question-text" style="font-size: 20px;">
+                    Druk op 'BEGIN' om de eerste vraag te krijgen.
                 </div>
                 
                 <div id="minimalActionButtons" class="minimal-action-buttons" style="display: none;">
@@ -654,7 +649,7 @@
         }
 
 
-        // --- NAVIGATIE LOGICA ---
+        // --- NAVIGATIE LOGICA (ONGEWIJZIGD) ---
         
         function showScreen(screenToShow) {
             document.querySelectorAll('.screen').forEach(s => {
@@ -785,19 +780,21 @@
         }
         
         function resetQuestionContainer() {
-            questionContainer.style.display = 'none'; // FIX 3: Verberg de hele container
             questionTypeEl.textContent = '';
-            questionTextEl.innerHTML = '';
+            // STARTTEKST TERUGGEZET IN HTML
+            questionTextEl.innerHTML = `Druk op 'BEGIN' om de eerste vraag te krijgen.`;
             
             minimalActionButtons.style.display = 'none'; 
-
+            
+            // GENERATE KNOP BLIJFT ZICHTBAAR, maar wordt geactiveerd/gedeactiveerd
+            generateQuestionButton.style.display = 'block'; 
+            generateQuestionButton.disabled = false;
+            
+            // Contextuele tekst
             generateQuestionButton.textContent = 'NIEUWE VRAAG';
             if (players[currentPlayerIndex].position === 0) {
                  generateQuestionButton.textContent = 'BEGIN';
             }
-
-            generateQuestionButton.style.display = 'block'; 
-            generateQuestionButton.disabled = false;
         }
 
         function drawGameBoard() {
@@ -837,8 +834,7 @@
         function updateBoardTokens() {
             document.querySelectorAll('.player-token').forEach(token => token.remove());
             
-            // FIX 2: Offset-logica voor gestapelde tokens
-            const positions = {}; // Telt hoeveel spelers op elke positie staan
+            const positions = {}; 
 
             players.forEach(player => {
                 if (!positions[player.position]) {
@@ -859,7 +855,7 @@
                         
                         // Stapeling: elke token 4px naar rechts verschuiven
                         const offset = index * 4; 
-                        token.style.right = `${5 + offset}px`; // 5px is de basis 'right'
+                        token.style.right = `${5 + offset}px`; 
                         
                         targetSquare.appendChild(token);
                     }
@@ -889,18 +885,18 @@
             resetQuestionContainer();
         }
         
-        // --- BEURT AFHANDELING (ONGEWIJZIGD) ---
+        // --- BEURT AFHANDELING ---
         
         completedButton.addEventListener('click', () => {
             minimalActionButtons.style.display = 'none';
-            generateQuestionButton.style.display = 'block';
+            generateQuestionButton.disabled = false; // Knop weer inschakelen
             movePlayer(1); 
             nextTurn();
         });
 
         consequenceButton.addEventListener('click', () => {
             minimalActionButtons.style.display = 'none';
-            generateQuestionButton.style.display = 'block';
+            generateQuestionButton.disabled = false; // Knop weer inschakelen
             nextTurn();
         });
         
@@ -931,7 +927,6 @@
         // --- VRAAG LOGICA ---
         
         generateQuestionButton.addEventListener('click', async () => {
-            questionContainer.style.display = 'flex'; // FIX 3: Toon de container
             generateQuestionButton.disabled = true;
             generateQuestionButton.textContent = 'LADEN...'; 
             
@@ -942,7 +937,6 @@
             const contextPlayers = players.map(p => p.name).join(', ');
 
             try {
-                // Echte API-oproep naar onze Vercel Serverless Functie (api/generate.js)
                 const response = await fetch('/api/generate', {
                     method: 'POST',
                     headers: {
@@ -973,9 +967,13 @@
                 console.error("Fout bij het ophalen van de vraag:", error);
                 questionTypeEl.textContent = 'FOUT';
                 questionTextEl.textContent = `Kon geen vraag ophalen. Controleer de netwerkverbinding of API-instellingen. Details: ${error.message}`;
+                // Herstel de knop bij een fout
+                generateQuestionButton.disabled = false;
+                generateQuestionButton.textContent = 'OPNIEUW PROBEREN';
+                return;
             } finally {
                 minimalActionButtons.style.display = 'flex'; 
-                generateQuestionButton.style.display = 'none'; 
+                // generateQuestionButton BLIJFT ZICHTBAAR, maar is disabled
             }
         });
 
