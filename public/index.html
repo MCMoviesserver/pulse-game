@@ -284,6 +284,7 @@
             cursor: pointer;
         }
 
+        /* Knoppen op deelnemers/categorie schermen */
         .start-game-button {
             background: linear-gradient(145deg, #00bcd4 0%, #3f51b5 100%);
             color: white;
@@ -295,6 +296,35 @@
             border: none;
             cursor: pointer;
             width: 100%;
+            /* Oude look terug */
+            box-shadow: 0 5px 20px rgba(0, 188, 212, 0.8);
+            transition: transform 0.2s;
+        }
+        
+        /* Generieke Actieknop voor Game Screen */
+        .action-button {
+            background: linear-gradient(145deg, #00bcd4 0%, #3f51b5 100%);
+            color: white;
+            padding: 18px 30px;
+            border-radius: 35px;
+            font-size: 20px;
+            font-weight: 800;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            /* Oude look terug */
+            box-shadow: 0 5px 20px rgba(0, 188, 212, 0.8);
+            transition: transform 0.2s;
+            opacity: 1;
+        }
+
+        .action-button:disabled {
+            background: #4a4a6b;
+            color: #aaa;
+            box-shadow: none;
+            cursor: not-allowed;
+            transform: none;
         }
 
 
@@ -379,7 +409,7 @@
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
         }
 
-        /* Vraag container - NU ALTIJD ZICHTBAAR */
+        /* Vraag container - NU ALTIJD ZICHTBAAR MET START TEKST */
         .question-container {
             flex-grow: 1; 
             width: 100%;
@@ -388,7 +418,7 @@
             border-radius: 25px;
             padding: 25px;
             box-sizing: border-box;
-            display: flex; /* Blijft flex */
+            display: flex; 
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -555,7 +585,7 @@
             </div>
             
             <div class="action-buttons" style="margin-top: 5px; margin-bottom: 0;">
-                <button id="generateQuestionButton" class="action-button" style="background: #3f51b5; color: white;">
+                <button id="generateQuestionButton" class="action-button">
                     BEGIN
                 </button>
             </div>
@@ -889,14 +919,14 @@
         
         completedButton.addEventListener('click', () => {
             minimalActionButtons.style.display = 'none';
-            generateQuestionButton.disabled = false; // Knop weer inschakelen
+            generateQuestionButton.disabled = false; 
             movePlayer(1); 
             nextTurn();
         });
 
         consequenceButton.addEventListener('click', () => {
             minimalActionButtons.style.display = 'none';
-            generateQuestionButton.disabled = false; // Knop weer inschakelen
+            generateQuestionButton.disabled = false; 
             nextTurn();
         });
         
