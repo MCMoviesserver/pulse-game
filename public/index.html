@@ -296,7 +296,6 @@
             border: none;
             cursor: pointer;
             width: 100%;
-            /* Oude look terug */
             box-shadow: 0 5px 20px rgba(0, 188, 212, 0.8);
             transition: transform 0.2s;
         }
@@ -313,7 +312,6 @@
             border: none;
             cursor: pointer;
             width: 100%;
-            /* Oude look terug */
             box-shadow: 0 5px 20px rgba(0, 188, 212, 0.8);
             transition: transform 0.2s;
             opacity: 1;
@@ -445,11 +443,12 @@
         }
 
         .minimal-action-button {
-            padding: 10px; 
-            border-radius: 50%; 
-            font-size: 30px; 
-            width: 70px; 
-            height: 70px; 
+            /* Vorm & Hoeken fix */
+            padding: 15px; 
+            border-radius: 15px; 
+            font-size: 36px; 
+            width: 80px; 
+            height: 80px; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -457,18 +456,18 @@
             cursor: pointer;
             flex-grow: 1;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            /* Zichtbaarheid fix */
+            color: #1a1a2e; 
         }
 
         /* Groene knop (Opgelost) */
         #completedButton {
-            background: linear-gradient(135deg, #66BB6A, #4CAF50);
-            color: white;
+            background: linear-gradient(135deg, #A5D6A7, #4CAF50);
         }
 
         /* Rode knop (Niet gedaan / Consequentie) */
         #consequenceButton {
-            background: linear-gradient(135deg, #ff6b6b, #e74c3c);
-            color: white;
+            background: linear-gradient(135deg, #EF9A9A, #e74c3c);
         }
 
         /* Algemene knop container voor de Generate button */
