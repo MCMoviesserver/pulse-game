@@ -118,7 +118,7 @@
         #game-screen .header, #category-screen .header, #players-screen .header {
             flex-grow: 0; 
             padding-top: 50px; 
-            margin-bottom: 25px; 
+            margin-bottom: 50px; /* VERGROTE AFSTAND NAAR SPELERS INFO */
         }
         
         .title {
@@ -309,17 +309,16 @@
             padding: 10px 0;
             border-radius: 15px;
             background: rgba(255, 255, 255, 0.1);
-            display: flex; /* Zorgt dat beide elementen op één lijn staan */
+            display: flex; 
             justify-content: center;
             gap: 10px;
         }
         
-        /* AAN DE BEURT styling fix */
         .player-turn-text {
             font-size: 24px;
             font-weight: 800;
             text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.7); /* Lichter/Subtieler */
+            color: rgba(255, 255, 255, 0.7); 
         }
 
         .current-player-name {
@@ -379,7 +378,7 @@
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
         }
 
-        /* Vraag container fix: minder aanwezig */
+        /* Vraag container */
         .question-container {
             flex-grow: 1; 
             width: 100%;
@@ -394,29 +393,57 @@
             align-items: center;
             text-align: center;
             margin-bottom: 20px;
-            min-height: 100px; /* Zorgt dat het vak niet te klein is bij lege tekst */
+            min-height: 100px; 
         }
         
-        /* Nieuwe stijl voor de actieknoppen onder spelbord */
+        .question-text {
+             font-size: 24px;
+             font-weight: 600;
+             line-height: 1.4;
+             min-height: 50px; /* Zorgt voor minimale ruimte */
+        }
+        
+        .question-type {
+            font-size: 18px;
+            font-weight: 700;
+            color: #00bcd4; 
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        /* Actieknoppen (Minimalistisch) */
         .action-buttons {
             display: flex;
             gap: 15px;
             width: 100%;
             max-width: 340px;
             padding-top: 10px;
-            margin-bottom: 20px; /* Ruimte onder de actieknoppen */
+            margin-bottom: 20px; 
+            /* Standaard verborgen, wordt getoond met JS */
         }
+        
+        /* Grote knop onderaan */
+        .main-action-button-container {
+             width: 100%;
+             max-width: 340px;
+             margin-top: 5px;
+             margin-bottom: 0;
+        }
+
 
         .action-button {
             padding: 15px 10px;
             border-radius: 30px;
-            font-size: 18px;
+            font-size: 36px; /* Grotere emoji */
             font-weight: 800;
-            text-transform: uppercase;
             border: none;
             cursor: pointer;
             flex-grow: 1;
+            height: 70px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         /* Groene knop (Opgelost) */
@@ -431,9 +458,16 @@
             color: white;
         }
 
-        #generateQuestionButton {
-             /* Zorgt dat de generate knop apart staat */
-             margin-top: 5px !important;
+        #nextQuestionButton {
+             background: #3f51b5; 
+             color: white;
+             font-size: 20px;
+             text-transform: uppercase;
+             padding: 18px 30px;
+             border-radius: 35px;
+             font-weight: 800;
+             width: 100%;
+             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
         }
         
     </style>
@@ -510,36 +544,37 @@
         </div>
 
         <div id="game-screen" class="screen">
-            <div class="header" style="padding-top: 5px;">
+            <div class="header" style="padding-top: 5px; margin-bottom: 30px;">
                 <div class="title" style="font-size: 32px; letter-spacing: 2px;">PULSE</div>
-                <div class="subtitle" id="gameCategory"></div> </div>
+                <div class="subtitle" id="gameCategory"></div> 
+            </div>
             
             <div class="current-player-info">
                 <span class="player-turn-text">AAN DE BEURT:</span> <span id="currentPlayerName" class="current-player-name">...</span>
             </div>
 
             <div class="game-board-container" id="gameBoardContainer">
-                </div>
-
-            <div class="action-buttons">
-                <button id="completedButton" class="action-button">
-                    ✅ OPGELOST (+1)
-                </button>
-                <button id="consequenceButton" class="action-button">
-                    ❌ NIET GEDAAN (SLOK)
-                </button>
             </div>
             
             <div class="question-container">
                 <div id="questionType" class="question-type"></div>
-                <div id="questionText" class="question-text" style="font-size: 20px;">
-                    Druk op 'VRAAG GENEREREN' om te starten.
+                <div id="questionText" class="question-text">
+                    Druk op START om te beginnen.
                 </div>
             </div>
             
-            <div class="action-buttons" style="margin-top: 5px; margin-bottom: 0;">
-                <button id="generateQuestionButton" class="action-button" style="background: #3f51b5; color: white;">
-                    VRAAG GENEREREN
+            <div id="questionActionButtons" class="action-buttons" style="display: none;">
+                <button id="completedButton" class="action-button" title="Opgelost">
+                    ✅ 
+                </button>
+                <button id="consequenceButton" class="action-button" title="Niet Gedaam / Consequentie">
+                    ❌
+                </button>
+            </div>
+            
+            <div class="main-action-button-container">
+                <button id="nextQuestionButton" class="action-button" style="background: #3f51b5; color: white;">
+                    START
                 </button>
             </div>
         </div>
@@ -568,10 +603,10 @@
         const gameBoardContainer = document.getElementById('gameBoardContainer');
         const questionTypeEl = document.getElementById('questionType');
         const questionTextEl = document.getElementById('questionText');
-        const generateQuestionButton = document.getElementById('generateQuestionButton');
+        const nextQuestionButton = document.getElementById('nextQuestionButton'); // Naam gewijzigd
         const completedButton = document.getElementById('completedButton');
         const consequenceButton = document.getElementById('consequenceButton');
-
+        const questionActionButtons = document.getElementById('questionActionButtons'); // De container
 
         // GLOBALE SPEL STATUS
         let players = [];
@@ -594,16 +629,6 @@
             };
         }
 
-        // Functie om de spelersdata op te halen/op te slaan uit de DOM
-        function getPlayersFromDOM() {
-             const listItems = Array.from(playersList.children);
-             return listItems.map(li => {
-                const name = li.querySelector('.player-name').textContent;
-                const color = li.getAttribute('data-color');
-                return { name, color };
-            });
-        }
-        
         // Functie om de lijst in de DOM te vullen (nodig bij terugnavigatie)
         function drawPlayersToDOM(playerData) {
             playersList.innerHTML = '';
@@ -725,11 +750,15 @@
                     alert("Maximale aantal spelers (7) bereikt.");
                     return; 
                 }
-
-                // Bepaal de volgende vrije kleur
+                
                 const usedColors = Array.from(playersList.children).map(li => li.getAttribute('data-color'));
                 const availableForNew = availableColors.filter(c => !usedColors.includes(c));
 
+                if (availableForNew.length === 0) {
+                     alert("Geen unieke kleuren meer beschikbaar. Maximaal 7 spelers.");
+                     return;
+                }
+                
                 const randomIndex = Math.floor(Math.random() * availableForNew.length);
                 const selectedColor = availableForNew[randomIndex];
                 
@@ -779,18 +808,24 @@
         }
         
         function resetQuestionContainer() {
-            // Minimalistische starttekst
+            // Pas de tekst van de knop aan voor de eerste beurt
+            if (players.every(p => p.position === 0)) {
+                nextQuestionButton.textContent = "START";
+                questionTextEl.innerHTML = 'Druk op **START** om te beginnen.';
+            } else {
+                nextQuestionButton.textContent = "NIEUWE VRAAG";
+                questionTextEl.innerHTML = 'Druk op **NIEUWE VRAAG** voor de beurt.';
+            }
+
             questionTypeEl.textContent = '';
-            questionTextEl.innerHTML = '<span style="opacity: 0.6; font-style: italic; font-size: 20px;">Druk op \'VRAAG GENEREREN\' om te starten.</span>';
-            completedButton.disabled = true;
-            consequenceButton.disabled = true;
-            generateQuestionButton.disabled = false;
+            questionActionButtons.style.display = 'none'; // Verberg de actieknoppen
+            nextQuestionButton.style.display = 'block'; // Toon de volgende vraag knop
         }
 
         function drawGameBoard() {
             gameBoardContainer.innerHTML = '';
             
-            // Vakje 0 is START
+            // ... (drawGameBoard logica is ongewijzigd) ...
             const startSquare = document.createElement('div');
             startSquare.className = 'board-square';
             startSquare.id = `square-0`;
@@ -859,7 +894,7 @@
         // --- BEURT AFHANDELING ---
         
         completedButton.addEventListener('click', () => {
-            movePlayer(1); // Bij succes 1 vakje vooruit
+            movePlayer(1); 
             nextTurn();
         });
 
@@ -875,7 +910,6 @@
             if (newPosition >= TOTAL_BOARD_SQUARES) {
                 newPosition = TOTAL_BOARD_SQUARES;
                 alert(`Gefeliciteerd! ${player.name} heeft het spel gewonnen! 🎉`);
-                // Hier kun je een reset naar het startscherm triggeren
             }
             
             player.position = newPosition;
@@ -894,13 +928,13 @@
              // Andere vakjes...
         }
         
-        // --- AI LOGICA (Echte API Call) ---
+        // --- VRAAG LOGICA (AI taal aangepast) ---
         
-        generateQuestionButton.addEventListener('click', async () => {
-            generateQuestionButton.disabled = true;
+        nextQuestionButton.addEventListener('click', async () => {
+            nextQuestionButton.style.display = 'none'; // Verberg de knop tijdens het laden
             
-            questionTypeEl.textContent = 'GENEREREN...'; 
-            questionTextEl.textContent = 'Het spel bedenkt een unieke Vraag/Opdracht...';
+            questionTypeEl.textContent = 'LADEN...'; 
+            questionTextEl.innerHTML = '<span style="opacity: 0.6; font-style: italic; font-size: 20px;">De volgende opdracht wordt bedacht...</span>';
             
             const currentPlayer = players[currentPlayerIndex].name;
             const contextPlayers = players.map(p => p.name).join(', ');
@@ -926,26 +960,36 @@
 
                 const apiResponse = await response.json();
 
-                // Toon het resultaat
+                // Toon het resultaat en de actieknoppen
                 questionTypeEl.textContent = apiResponse.type || selectedCategory.toUpperCase();
                 questionTextEl.innerHTML = `
                     ${apiResponse.question} 
                     <br><br> 
-                    <span style="font-size: 18px; font-weight: 700; color: #ffeb3b;">*Consequentie: ${apiResponse.consequence || 'Onbekend'}*</span>
+                    <span style="font-size: 18px; font-weight: 700; color: #ffeb3b;">*Consequentie: ${apiResponse.consequence || 'Slok/Shot'}*</span>
                 `;
+                
+                questionActionButtons.style.display = 'flex'; 
+
             } catch (error) {
-                console.error("Fout bij genereren van vraag:", error);
+                console.error("Fout bij laden van vraag:", error);
                 questionTypeEl.textContent = 'FOUT';
-                questionTextEl.textContent = `Kon geen vraag genereren. Controleer of de API-sleutel correct is ingesteld in Vercel. Details: ${error.message}`;
-            } finally {
-                completedButton.disabled = false;
-                consequenceButton.disabled = false;
+                questionTextEl.textContent = `Kon geen vraag laden. Probeer het opnieuw.`;
+                nextQuestionButton.style.display = 'block'; // Toon de knop opnieuw bij fout
             }
         });
 
-        // Initialiseer de game buttons op disabled totdat een vraag is geladen
-        completedButton.disabled = true;
-        consequenceButton.disabled = true;
+        // Event listeners aanpassen om na klik de actieknoppen te verbergen en de volgende vraag knop te tonen
+        completedButton.addEventListener('click', () => {
+            // ... (movePlayer en nextTurn logica)
+            questionActionButtons.style.display = 'none'; 
+            nextQuestionButton.style.display = 'block'; 
+        });
+
+        consequenceButton.addEventListener('click', () => {
+            // ... (nextTurn logica)
+            questionActionButtons.style.display = 'none'; 
+            nextQuestionButton.style.display = 'block'; 
+        });
         
     </script>
 </body>
