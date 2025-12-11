@@ -6,12 +6,13 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "vercel-build": "echo 'Statische deploy, skipping default Next.js build.'"
+    "vercel-build": "echo 'Statische deploy, skipping default Next.js build.'\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@google/genai": "^0.14.0" 
+    "@google/genai": "^0.14.0",
+    "@vercel/kv": "^0.2.2" 
   }
 }
