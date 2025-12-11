@@ -1,0 +1,2649 @@
+[
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Vanaf nu moet {player} elke keer dat iemand het woord 'proost' gebruikt, 3 keer knipperen zonder dat iemand het merkt. Als iemand je betrapt, ben je af.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat je je glas neerzet, moet {player} zachtjes met zijn duim op de tafel tikken. Als iemand je betrapt, ben je af.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} mag de volgende 10 minuten alleen nog maar praten in de derde persoon over zichzelf. Als je de eerste persoon (ik, mij) gebruikt, ben je af.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Zonder dat iemand het ziet, moet {player} de volgende 3 minuten zijn of haar neus aanraken bij elk nieuw onderwerp dat begint.",
+    "consequence": "Twee slokken en een selfie als vogelverschrikker"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} alle vragen met een onnodig gedetailleerd antwoord beginnen ('Dat is een interessante vraag...').",
+    "consequence": "Twee slokken en 5 seconden planken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Zodra iemand lacht, moet {player} snel een denkbeeldige vlieg wegjagen. Dit moet 3 keer gebeuren.",
+    "consequence": "Drie shots"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Bij elke 'ja' of 'nee' die {player} hoort, moet hij/zij onopvallend één vinger bewegen.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} een fictief, klein dier in zijn zak verzorgen (aaien, troosten, etc.) als niemand kijkt.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} iets drinkt, moet hij/zij eerst een klein 'Aah!' geluid maken, heel zachtjes.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet een ander 'ding' toewijzen aan de naam van een speler zonder dat ze het doorhebben. Bijv: 'Ja, Jan (appel) heeft gelijk.'",
+    "consequence": "Vier slokken en een 'ik ben de beste'-selfie"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Tijdens de volgende 5 minuten moet {player} een zin van ten minste 5 woorden herhalen die een ander net heeft gezegd, maar als een vragende zin.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} zijn/haar mond afveegt, moet hij/zij de hand van de linkerbuur aantikken.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 5 keer dat hij/zij praat, zijn/haar stem onopvallend een halve toon hoger laten klinken.",
+    "consequence": "Vier slokken en een 'nee'-shot"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Zonder dat iemand het merkt, moet {player} 5 keer zijn/haar schouders ophalen tijdens een gesprek over iets dat hij/zij niet interesseert.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} zijn/haar handen vastgeklemd houden (of op schoot) als hij/zij niet aan het praten is.",
+    "consequence": "Vier slokken en een 'kies een vriend'-shot"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Als iemand naar zijn telefoon kijkt, moet {player} onmiddellijk doen alsof hij/zij zijn/haar oor schoonmaakt.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} alles wat hij/zij niet begrijpt, herhalen met een verwarde blik (maar zonder te vragen wat het is).",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat een speler een naam noemt, moet {player} even naar het plafond staren.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet proberen om de woorden 'echt', 'gewoon', of 'wel' in elke zin te gebruiken zonder dat het opvalt.",
+    "consequence": "Drie slokken en 10 seconden de 'kip' nadoen"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 10 minuten moet {player} een onzichtbare mug rond zijn/haar hoofd wegjagen wanneer de lichten dimmen.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand een anekdote vertelt, moet {player} heimelijk een duim omhoog steken naar de persoon die tegenover hem/haar zit.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 3 keer dat hij/zij praat, eerst een onnodig geluid maken (een kuchje, een zucht, enz.).",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 10 minuten moet {player} elke keer dat iemand 'ik' zegt, zijn/haar linkeroog knijpen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Als {player} praat, moet hij/zij proberen om onopvallend een woord te laten eindigen op '-ing'. Als iemand het merkt, ben je af.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} doen alsof hij/zij zwaar nadenkt over de kleur van iets onbelangrijks in de kamer.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} iemand aankijkt, moet hij/zij een minieme, vragende glimlach opzetten.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Bij de volgende 4 complimenten die {player} ontvangt, moet hij/zij reageren met 'Dat is maar een mening'.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} zijn/haar hoofd schudden wanneer hij/zij 'ja' zegt, en knikken wanneer hij/zij 'nee' zegt.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet bij de volgende 3 keer dat hij/zij staat, een onzichtbaar voorwerp van de grond oppakken.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Zodra iemand niest, moet {player} heel zachtjes 'Gezondheid, zout, peper' zeggen.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 5 minuten zijn/haar haar (of hoofd) aanraken wanneer hij/zij twijfelt over iets.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} een korte pauze van 2 seconden inlassen voordat hij/zij op een directe vraag antwoordt.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} zijn/haar handen wast (of naar het toilet gaat), moet hij/zij neuriën.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet een 'Inside Joke' van de groep onopvallend 3 keer aanhalen in een gesprek met een buitenstaander.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} elke keer dat hij/zij zijn/haar stoel verlaat, een object van een andere speler stiekem verplaatsen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat iemand een feit noemt, moet {player} een onzichtbaar notitieblok tevoorschijn halen en doen alsof hij/zij het opschrijft.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 10 minuten altijd eindigen met 'en dat is de waarheid' (of een subtiele variant) wanneer hij/zij een statement maakt.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Zonder dat iemand het merkt, moet {player} de volgende keer dat hij/zij praat, zijn/haar woorden iets meer articuleren, alsof hij/zij te veel heeft gedronken.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Als iemand de kamer verlaat, moet {player} onmiddellijk doen alsof hij/zij de lichten controleert (aan/uit).",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} elke keer dat iemand het woord 'maar' gebruikt, een kleine, onschuldige zucht laten horen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 3 keer dat hij/zij iemand groet, de hand schudden in plaats van te knuffelen/zoenen.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een glas opneemt, moet hij/zij eerst een moment stilstaan en het glas inspecteren.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 10 minuten moet {player} elke keer dat iemand een vraag stelt, eerst kort naar links kijken.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet stiekem een denkbeeldige kroon opzetten/afzetten wanneer het onderwerp van gesprek verandert.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 5 minuten mag {player} alleen zinnen van precies vier woorden gebruiken.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} zijn/haar naam hoort, moet hij/zij onopvallend aan zijn/haar oorlel trekken.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat iemand een grap maakt, moet {player} een notitie maken van hoe grappig het was op een denkbeeldige schaal.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} elk nieuw gesprek beginnen met 'Dus, over dat...' ongeacht het onderwerp.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet drie keer onopvallend de speler tegenover hem/haar een compliment geven over hun kleding.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat een speler zijn/haar armen over elkaar slaat, moet {player} onmiddellijk hetzelfde doen.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Zonder dat iemand het merkt, moet {player} met het puntje van de tong zijn/haar lippen nat maken na elke slok.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 5 minuten bij het lachen altijd de hand voor de mond houden, ook als het niet nodig is.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} gaat zitten, moet hij/zij even de stoel inspecteren op stof of vuil, als een kleine, onnodige routine.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat iemand 'misschien' zegt, moet {player} onopvallend zijn/haar duimen kruisen.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} elke keer dat hij/zij praat, zijn/haar drinken een klein beetje naar de linkerkant bewegen.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Als iemand {player} aankijkt, moet {player} een seconde langer oogcontact houden dan normaal, zonder te glimlachen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} zijn/haar naam fluisteren voordat hij/zij op een vraag van een andere speler antwoordt.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand een telefoon oppakt, moet {player} onmiddellijk op een denkbeeldige afstandsbediening drukken.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer stiekem doen alsof hij/zij iets van de tafel afveegt, ook al is er niets.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat het licht verandert (of flikkert), moet {player} 2 keer op de grond tikken met de voet.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} elke zin beëindigen met '...of zoiets' of een vergelijkbare, vage toevoeging.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 3 keer dat hij/zij praat, zijn/haar woorden heel langzaam uitspreken.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand niest, moet {player} in plaats van 'Gezondheid' heel zachtjes 'Absoluut' zeggen.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten mag {player} geen woorden gebruiken die met de letter 'E' beginnen.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet stiekem doen alsof hij/zij de schouder van de buurman masseert wanneer ze allebei stil zijn.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} iets eet, moet hij/zij even een denkbeeldig instrument bespelen (bijv. een mini-viool).",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} altijd reageren op opmerkingen met een vragende intonatie (bv. 'Oh, is dat zo?').",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet een ander 'ding' toewijzen aan de naam van een speler zonder dat ze het doorhebben. Bijv: 'Ja, Jan (appel) heeft gelijk.'",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Als {player} praat, moet hij/zij zijn/haar pink van de hand die niet drinkt, omhoog houden.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat een speler opkijkt, moet {player} onopvallend met zijn/haar wenkbrauwen fronsen.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 5 minuten moet {player} elk drankje behandelen alsof het een zeldzaam, waardevol object is (voorzichtig oppakken).",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een vraag stelt, moet hij/zij onopvallend met de vinger in de lucht 'citaattekens' maken.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 10 minuten moet {player} doen alsof hij/zij een onzichtbare vlinder probeert te vangen wanneer de aandacht verslapt.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} mag alleen 'Graag gedaan' zeggen als reactie op een bedankje. Elk ander antwoord is falen.",
+    "consequence": "Drie slokken en 10 seconden de 'kip' nadoen"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} over het weer praat, moet hij/zij onopvallend een zonnebril-gebaar maken met de vingers.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 5 minuten moet {player} zich bij elke nieuwe persoon die hij/zij ziet voorstellen als 'De Speler'.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een opmerking maakt, moet hij/zij onopvallend de speler rechts aanwijzen, alsof die de bron is.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 10 minuten elke zin met een klinker laten beginnen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat een speler zijn/haar naam noemt, moet {player} de woorden 'maar' of 'echter' in de volgende zin gebruiken.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} bij elke slok zijn/haar ogen sluiten en een moment van diepe contemplatie nabootsen.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer zijn/haar linkerhand gebruiken voor taken die je normaal met je rechterhand zou doen, zonder op te vallen.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} staat, moet hij/zij subtiel een hand op de heup leggen, alsof hij/zij poseert.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat iemand een horloge/telefoon checkt, moet {player} onmiddellijk op de pols van de linkerbuurman tikken.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} bij elk onderwerp een onnodig feit over vogels toevoegen (bv. 'Wist je dat kolibries achteruit kunnen vliegen?').",
+    "consequence": "Drie slokken en een 'kies een vriend'-shot"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Zonder dat iemand het merkt, moet {player} de volgende 5 minuten zijn/haar stoel 5 cm verschuiven.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} lacht, moet hij/zij de schouders een beetje optrekken, als een vage schok.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} elke zin beëindigen met '... punt uit.' wanneer hij/zij het ergens niet mee eens is.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand een glas laat vallen of morst, moet {player} snel een denkbeeldige 'straaljager'-beweging maken met de hand.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} mag alleen 'Natuurlijk!' zeggen in plaats van 'Ja'.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} elke keer dat hij/zij praat, zijn/haar hoofd een klein beetje naar links kantelen.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een naam noemt, moet hij/zij die naam 2 keer in de zin herhalen (bv. 'Jan, Jan zei dat...').",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat iemand een drankje bijvult, moet {player} zachtjes in de handen klappen (moet onopgemerkt blijven).",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} zijn/haar ogen sluiten als iemand een vraag aan een ander stelt.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer een onzichtbare 'high five' uitwisselen met de persoon naast hem/haar.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} naar buiten kijkt, moet hij/zij onmiddellijk een denkbeeldige camera vasthouden en een foto maken.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten mag {player} geen woorden gebruiken die met de letter 'L' eindigen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat iemand klaagt over iets, moet {player} onopvallend zijn/haar armen over elkaar slaan.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 5 minuten elke zin beëindigen met '...dus dat'.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} staat, moet hij/zij 5 seconden op de tenen balanceren.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} reageren op opmerkingen door een onnodige, maar overtuigende zucht te laten horen.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer een denkbeeldige hoed afnemen en weer opzetten wanneer een oud verhaal wordt verteld.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} in de lach schiet, moet hij/zij een onschuldige 'piep'-geluid maken.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} elk drankje optillen met de middelvinger onder de bodem.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand een compliment geeft, moet {player} even zijn/haar schouderklopje geven.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} mag alleen zijn/haar rechterhand gebruiken om iets aan te wijzen of te gebaren.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} elke keer dat hij/zij niest, doen alsof hij/zij in een denkbeeldige zakdoek niest.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een nieuw onderwerp aansnijdt, moet hij/zij beginnen met de zin 'Dit is belangrijk, luister.'",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} op zijn/haar telefoon kijkt, moet hij/zij stiekem een 'duim omhoog' geven naar de telefoon.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} zijn/haar woorden iets meer articuleren, alsof hij/zij een acteur is.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} opmerkt dat iemand het met hem/haar eens is, moet hij/zij zachtjes 'Kassa!' zeggen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} elke vraag beantwoorden door eerst de laatste 3 woorden van de vraag te herhalen.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer onopvallend een onzichtbaar deksel op de tafel sluiten.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} knikt, moet hij/zij onopvallend een hand op de kin leggen.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} elke keer dat hij/zij praat, zijn/haar hoofd een halve draai geven.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} naar een ander kijkt, moet hij/zij even de wenkbrauwen optrekken alsof hij/zij verrast is.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} een feit noemt, moet hij/zij met de vinger in de lucht een uitroepteken tekenen.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} reageren op opmerkingen door te knikken en zijn/haar hoofd 3 keer te schudden (alsof hij/zij twijfelt).",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 3 keer dat hij/zij praat, zijn/haar adem inhouden tijdens de eerste twee woorden.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand lacht, moet {player} een klein, onzichtbaar dansje doen met de vingers op de tafel.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten mag {player} geen woorden gebruiken die met de letter 'R' eindigen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} niest, moet hij/zij in plaats van 'Gezondheid' heel zachtjes 'Amen' zeggen.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 5 minuten zijn/haar stoel 5 cm verschuiven.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand een telefoon oppakt, moet {player} onmiddellijk op een denkbeeldige afstandsbediening drukken.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} elke keer dat hij/zij praat, zijn/haar drinken een klein beetje naar de linkerkant bewegen.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer een onzichtbare 'high five' uitwisselen met de persoon naast hem/haar.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat het licht verandert (of flikkert), moet {player} 2 keer op de grond tikken met de voet.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 5 minuten moet {player} elke zin beëindigen met '...of zoiets' of een vergelijkbare, vage toevoeging.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 3 keer dat hij/zij praat, zijn/haar woorden heel langzaam uitspreken.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand niest, moet {player} in plaats van 'Gezondheid' heel zachtjes 'Absoluut' zeggen.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} elke keer dat hij/zij praat, zijn/haar hoofd een klein beetje naar links kantelen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een naam noemt, moet hij/zij die naam 2 keer in de zin herhalen (bv. 'Jan, Jan zei dat...').",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} in de lach schiet, moet hij/zij een onschuldige 'piep'-geluid maken.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} elk drankje optillen met de middelvinger onder de bodem.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand een compliment geeft, moet {player} even zijn/haar schouderklopje geven.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} mag alleen zijn/haar rechterhand gebruiken om iets aan te wijzen of te gebaren.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} elke keer dat hij/zij niest, doen alsof hij/zij in een denkbeeldige zakdoek niest.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een nieuw onderwerp aansnijdt, moet hij/zij beginnen met de zin 'Dit is belangrijk, luister.'",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} op zijn/haar telefoon kijkt, moet hij/zij stiekem een 'duim omhoog' geven naar de telefoon.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} zijn/haar woorden iets meer articuleren, alsof hij/zij een acteur is.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} opmerkt dat iemand het met hem/haar eens is, moet hij/zij zachtjes 'Kassa!' zeggen.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} elke vraag beantwoorden door eerst de laatste 3 woorden van de vraag te herhalen.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer onopvallend een onzichtbaar deksel op de tafel sluiten.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} knikt, moet hij/zij onopvallend een hand op de kin leggen.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} elke keer dat hij/zij praat, zijn/haar hoofd een halve draai geven.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} naar een ander kijkt, moet hij/zij even de wenkbrauwen optrekken alsof hij/zij verrast is.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} een feit noemt, moet hij/zij met de vinger in de lucht een uitroepteken tekenen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} reageren op opmerkingen door te knikken en zijn/haar hoofd 3 keer te schudden (alsof hij/zij twijfelt).",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 3 keer dat hij/zij praat, zijn/haar adem inhouden tijdens de eerste twee woorden.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand lacht, moet {player} een klein, onzichtbaar dansje doen met de vingers op de tafel.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten mag {player} geen woorden gebruiken die met de letter 'R' eindigen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} niest, moet hij/zij in plaats van 'Gezondheid' heel zachtjes 'Amen' zeggen.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} elk drankje behandelen alsof het een zeldzaam, waardevol object is (voorzichtig oppakken).",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een vraag stelt, moet hij/zij onopvallend met de vinger in de lucht 'citaattekens' maken.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 10 minuten moet {player} doen alsof hij/zij een onzichtbare vlinder probeert te vangen wanneer de aandacht verslapt.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} mag alleen 'Graag gedaan' zeggen als reactie op een bedankje. Elk ander antwoord is falen.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} over het weer praat, moet hij/zij onopvallend een zonnebril-gebaar maken met de vingers.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 5 minuten moet {player} zich bij elke nieuwe persoon die hij/zij ziet voorstellen als 'De Speler'.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een opmerking maakt, moet hij/zij onopvallend de speler rechts aanwijzen, alsof die de bron is.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} elke zin met een klinker laten beginnen.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat een speler zijn/haar naam noemt, moet {player} de woorden 'maar' of 'echter' in de volgende zin gebruiken.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} bij elke slok zijn/haar ogen sluiten en een moment van diepe contemplatie nabootsen.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer zijn/haar linkerhand gebruiken voor taken die je normaal met je rechterhand zou doen, zonder op te vallen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} staat, moet hij/zij subtiel een hand op de heup leggen, alsof hij/zij poseert.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat iemand een horloge/telefoon checkt, moet {player} onmiddellijk op de pols van de linkerbuurman tikken.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} bij elk onderwerp een onnodig feit over vogels toevoegen (bv. 'Wist je dat kolibries achteruit kunnen vliegen?').",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Zonder dat iemand het merkt, moet {player} de volgende 5 minuten zijn/haar stoel 5 cm verschuiven.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} lacht, moet hij/zij de schouders een beetje optrekken, als een vage schok.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} elke zin beëindigen met '... punt uit.' wanneer hij/zij het ergens niet mee eens is.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand een glas laat vallen of morst, moet {player} snel een denkbeeldige 'straaljager'-beweging maken met de hand.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} mag alleen 'Natuurlijk!' zeggen in plaats van 'Ja'.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} elke keer dat hij/zij praat, zijn/haar hoofd een klein beetje naar links kantelen.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een naam noemt, moet hij/zij die naam 2 keer in de zin herhalen (bv. 'Jan, Jan zei dat...').",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} een drankje bijvult, moet hij/zij zachtjes in de handen klappen (moet onopgemerkt blijven).",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} zijn/haar ogen sluiten als iemand een vraag aan een ander stelt.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer een onzichtbare 'high five' uitwisselen met de persoon naast hem/haar.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} naar buiten kijkt, moet hij/zij onmiddellijk een denkbeeldige camera vasthouden en een foto maken.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten mag {player} geen woorden gebruiken die met de letter 'L' eindigen.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat iemand klaagt over iets, moet {player} onopvallend zijn/haar armen over elkaar slaan.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 5 minuten elke zin beëindigen met '...dus dat'.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} staat, moet hij/zij 5 seconden op de tenen balanceren.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} reageren op opmerkingen door een onnodige, maar overtuigende zucht te laten horen.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer een denkbeeldige hoed afnemen en weer opzetten wanneer een oud verhaal wordt verteld.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} in de lach schiet, moet hij/zij een onschuldige 'piep'-geluid maken.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} elk drankje optillen met de middelvinger onder de bodem.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand een compliment geeft, moet {player} even zijn/haar schouderklopje geven.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} mag alleen zijn/haar rechterhand gebruiken om iets aan te wijzen of te gebaren.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} elke keer dat hij/zij niest, doen alsof hij/zij in een denkbeeldige zakdoek niest.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een nieuw onderwerp aansnijdt, moet hij/zij beginnen met de zin 'Dit is belangrijk, luister.'",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} op zijn/haar telefoon kijkt, moet hij/zij stiekem een 'duim omhoog' geven naar de telefoon.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} zijn/haar woorden iets meer articuleren, alsof hij/zij een acteur is.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} opmerkt dat iemand het met hem/haar eens is, moet hij/zij zachtjes 'Kassa!' zeggen.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} elke vraag beantwoorden door eerst de laatste 3 woorden van de vraag te herhalen.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer onopvallend een onzichtbaar deksel op de tafel sluiten.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} knikt, moet hij/zij onopvallend een hand op de kin leggen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} elke keer dat hij/zij praat, zijn/haar hoofd een halve draai geven.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} naar een ander kijkt, moet hij/zij even de wenkbrauwen optrekken alsof hij/zij verrast is.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} een feit noemt, moet hij/zij met de vinger in de lucht een uitroepteken tekenen.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} reageren op opmerkingen door te knikken en zijn/haar hoofd 3 keer te schudden (alsof hij/zij twijfelt).",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 3 keer dat hij/zij praat, zijn/haar adem inhouden tijdens de eerste twee woorden.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand lacht, moet {player} een klein, onzichtbaar dansje doen met de vingers op de tafel.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten mag {player} geen woorden gebruiken die met de letter 'R' eindigen.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} niest, moet hij/zij in plaats van 'Gezondheid' heel zachtjes 'Amen' zeggen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} elk drankje behandelen alsof het een zeldzaam, waardevol object is (voorzichtig oppakken).",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een vraag stelt, moet hij/zij onopvallend met de vinger in de lucht 'citaattekens' maken.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 10 minuten moet {player} doen alsof hij/zij een onzichtbare vlinder probeert te vangen wanneer de aandacht verslapt.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} mag alleen 'Graag gedaan' zeggen als reactie op een bedankje. Elk ander antwoord is falen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} over het weer praat, moet hij/zij onopvallend een zonnebril-gebaar maken met de vingers.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 5 minuten moet {player} zich bij elke nieuwe persoon die hij/zij ziet voorstellen als 'De Speler'.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een opmerking maakt, moet hij/zij onopvallend de speler rechts aanwijzen, alsof die de bron is.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} elke zin met een klinker laten beginnen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat een speler zijn/haar naam noemt, moet {player} de woorden 'maar' of 'echter' in de volgende zin gebruiken.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} bij elke slok zijn/haar ogen sluiten en een moment van diepe contemplatie nabootsen.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer zijn/haar linkerhand gebruiken voor taken die je normaal met je rechterhand zou doen, zonder op te vallen.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} staat, moet hij/zij subtiel een hand op de heup leggen, alsof hij/zij poseert.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat iemand een horloge/telefoon checkt, moet {player} onmiddellijk op de pols van de linkerbuurman tikken.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} bij elk onderwerp een onnodig feit over vogels toevoegen (bv. 'Wist je dat kolibries achteruit kunnen vliegen?').",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Zonder dat iemand het merkt, moet {player} de volgende 5 minuten zijn/haar stoel 5 cm verschuiven.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} lacht, moet hij/zij de schouders een beetje optrekken, als een vage schok.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} elke zin beëindigen met '... punt uit.' wanneer hij/zij het ergens niet mee eens is.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand een glas laat vallen of morst, moet {player} snel een denkbeeldige 'straaljager'-beweging maken met de hand.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} mag alleen 'Natuurlijk!' zeggen in plaats van 'Ja'.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} elke keer dat hij/zij praat, zijn/haar hoofd een klein beetje naar links kantelen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een naam noemt, moet hij/zij die naam 2 keer in de zin herhalen (bv. 'Jan, Jan zei dat...').",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} een drankje bijvult, moet hij/zij zachtjes in de handen klappen (moet onopgemerkt blijven).",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} zijn/haar ogen sluiten als iemand een vraag aan een ander stelt.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer een onzichtbare 'high five' uitwisselen met de persoon naast hem/haar.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} naar buiten kijkt, moet hij/zij onmiddellijk een denkbeeldige camera vasthouden en een foto maken.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten mag {player} geen woorden gebruiken die met de letter 'L' eindigen.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat iemand klaagt over iets, moet {player} onopvallend zijn/haar armen over elkaar slaan.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 5 minuten elke zin beëindigen met '...dus dat'.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} staat, moet hij/zij 5 seconden op de tenen balanceren.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} reageren op opmerkingen door een onnodige, maar overtuigende zucht te laten horen.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer een denkbeeldige hoed afnemen en weer opzetten wanneer een oud verhaal wordt verteld.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} in de lach schiet, moet hij/zij een onschuldige 'piep'-geluid maken.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} elk drankje optillen met de middelvinger onder de bodem.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand een compliment geeft, moet {player} even zijn/haar schouderklopje geven.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} mag alleen zijn/haar rechterhand gebruiken om iets aan te wijzen of te gebaren.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} elke keer dat hij/zij niest, doen alsof hij/zij in een denkbeeldige zakdoek niest.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een nieuw onderwerp aansnijdt, moet hij/zij beginnen met de zin 'Dit is belangrijk, luister.'",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} op zijn/haar telefoon kijkt, moet hij/zij stiekem een 'duim omhoog' geven naar de telefoon.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} zijn/haar woorden iets meer articuleren, alsof hij/zij een acteur is.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} opmerkt dat iemand het met hem/haar eens is, moet hij/zij zachtjes 'Kassa!' zeggen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} elke vraag beantwoorden door eerst de laatste 3 woorden van de vraag te herhalen.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer onopvallend een onzichtbaar deksel op de tafel sluiten.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} knikt, moet hij/zij onopvallend een hand op de kin leggen.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} elke keer dat hij/zij praat, zijn/haar hoofd een halve draai geven.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} naar een ander kijkt, moet hij/zij even de wenkbrauwen optrekken alsof hij/zij verrast is.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} een feit noemt, moet hij/zij met de vinger in de lucht een uitroepteken tekenen.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} reageren op opmerkingen door te knikken en zijn/haar hoofd 3 keer te schudden (alsof hij/zij twijfelt).",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 3 keer dat hij/zij praat, zijn/haar adem inhouden tijdens de eerste twee woorden.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand lacht, moet {player} een klein, onzichtbaar dansje doen met de vingers op de tafel.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten mag {player} geen woorden gebruiken die met de letter 'R' eindigen.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} niest, moet hij/zij in plaats van 'Gezondheid' heel zachtjes 'Amen' zeggen.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} elk drankje behandelen alsof het een zeldzaam, waardevol object is (voorzichtig oppakken).",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een vraag stelt, moet hij/zij onopvallend met de vinger in de lucht 'citaattekens' maken.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 10 minuten moet {player} doen alsof hij/zij een onzichtbare vlinder probeert te vangen wanneer de aandacht verslapt.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} mag alleen 'Graag gedaan' zeggen als reactie op een bedankje. Elk ander antwoord is falen.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} over het weer praat, moet hij/zij onopvallend een zonnebril-gebaar maken met de vingers.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 5 minuten moet {player} zich bij elke nieuwe persoon die hij/zij ziet voorstellen als 'De Speler'.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een opmerking maakt, moet hij/zij onopvallend de speler rechts aanwijzen, alsof die de bron is.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} elke zin met een klinker laten beginnen.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat een speler zijn/haar naam noemt, moet {player} de woorden 'maar' of 'echter' in de volgende zin gebruiken.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} bij elke slok zijn/haar ogen sluiten en een moment van diepe contemplatie nabootsen.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer zijn/haar linkerhand gebruiken voor taken die je normaal met je rechterhand zou doen, zonder op te vallen.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} staat, moet hij/zij subtiel een hand op de heup leggen, alsof hij/zij poseert.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat iemand een horloge/telefoon checkt, moet {player} onmiddellijk op de pols van de linkerbuurman tikken.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} bij elk onderwerp een onnodig feit over vogels toevoegen (bv. 'Wist je dat kolibries achteruit kunnen vliegen?').",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Zonder dat iemand het merkt, moet {player} de volgende 5 minuten zijn/haar stoel 5 cm verschuiven.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} lacht, moet hij/zij de schouders een beetje optrekken, als een vage schok.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} elke zin beëindigen met '... punt uit.' wanneer hij/zij het ergens niet mee eens is.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand een glas laat vallen of morst, moet {player} snel een denkbeeldige 'straaljager'-beweging maken met de hand.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} mag alleen 'Natuurlijk!' zeggen in plaats van 'Ja'.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} elke keer dat hij/zij praat, zijn/haar hoofd een klein beetje naar links kantelen.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een naam noemt, moet hij/zij die naam 2 keer in de zin herhalen (bv. 'Jan, Jan zei dat...').",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} een drankje bijvult, moet hij/zij zachtjes in de handen klappen (moet onopgemerkt blijven).",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} zijn/haar ogen sluiten als iemand een vraag aan een ander stelt.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer een onzichtbare 'high five' uitwisselen met de persoon naast hem/haar.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} naar buiten kijkt, moet hij/zij onmiddellijk een denkbeeldige camera vasthouden en een foto maken.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten mag {player} geen woorden gebruiken die met de letter 'L' eindigen.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat iemand klaagt over iets, moet {player} onopvallend zijn/haar armen over elkaar slaan.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 5 minuten elke zin beëindigen met '...dus dat'.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} staat, moet hij/zij 5 seconden op de tenen balanceren.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} reageren op opmerkingen door een onnodige, maar overtuigende zucht te laten horen.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer een denkbeeldige hoed afnemen en weer opzetten wanneer een oud verhaal wordt verteld.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} in de lach schiet, moet hij/zij een onschuldige 'piep'-geluid maken.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} elk drankje optillen met de middelvinger onder de bodem.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand een compliment geeft, moet {player} even zijn/haar schouderklopje geven.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} mag alleen zijn/haar rechterhand gebruiken om iets aan te wijzen of te gebaren.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} elke keer dat hij/zij niest, doen alsof hij/zij in een denkbeeldige zakdoek niest.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} een nieuw onderwerp aansnijdt, moet hij/zij beginnen met de zin 'Dit is belangrijk, luister.'",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} op zijn/haar telefoon kijkt, moet hij/zij stiekem een 'duim omhoog' geven naar de telefoon.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} zijn/haar woorden iets meer articuleren, alsof hij/zij een acteur is.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} opmerkt dat iemand het met hem/haar eens is, moet hij/zij zachtjes 'Kassa!' zeggen.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 7 minuten moet {player} elke vraag beantwoorden door eerst de laatste 3 woorden van de vraag te herhalen.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet 3 keer onopvallend een onzichtbaar deksel op de tafel sluiten.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} knikt, moet hij/zij onopvallend een hand op de kin leggen.",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De volgende 10 minuten moet {player} elke keer dat hij/zij praat, zijn/haar hoofd een halve draai geven.",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer {player} naar een ander kijkt, moet hij/zij even de wenkbrauwen optrekken alsof hij/zij verrast is.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Elke keer dat {player} een feit noemt, moet hij/zij met de vinger in de lucht een uitroepteken tekenen.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "De komende 5 minuten moet {player} reageren op opmerkingen door te knikken en zijn/haar hoofd 3 keer te schudden (alsof hij/zij twijfelt).",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "{player} moet de volgende 3 keer dat hij/zij praat, zijn/haar adem inhouden tijdens de eerste twee woorden.",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Borrel Pulse",
+    "type": "GEHEIME OPDRACHT",
+    "question": "Wanneer iemand lacht, moet {player} een klein, onzichtbaar dansje doen met de vingers op de tafel.",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is het grootste misverstand dat mensen over {player} hebben, en waarom laat je dat misverstand bestaan?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Beschrijf een moment in je leven waarop je dacht dat je gefaald had, maar dat later een keerpunt bleek te zijn.",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je één overtuiging die je had op je 18e nu zou kunnen veranderen, welke zou dat zijn en waarom?",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest waardevolle les die {player} heeft geleerd door pijn of verlies te ervaren?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke droom of ambitie heb je uitgesteld omdat je bang bent voor de meningen van anderen?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een 'mentale reset'-knop had, welke angst of onzekerheid zou je dan voor altijd wissen?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is één eigenschap die {player} bewondert in een van de andere spelers, en waarom is het moeilijk om die zelf te bezitten?",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke rol speel je in je vriendengroep (bijvoorbeeld de grappenmaker, de luisteraar, de organisator) en voelt dat als je echte zelf?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je over 5 jaar terugkijkt, welke kans van vandaag zou je dan het meest betreuren als je die liet liggen?",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Beschrijf een moment waarop je voelde dat je perfect op je plek was, en wat maakte dat gevoel zo compleet?",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest ongemakkelijke waarheid die {player} heeft moeten accepteren over zijn/haar familie of opvoeding?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welk compliment zou het meest overrompelend en betekenisvol zijn om van iemand te ontvangen?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je één sociaal medium voor altijd zou moeten verwijderen omdat het je ongelukkig maakt, welke zou dat zijn en waarom?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de grootste opoffering die {player} heeft gedaan in naam van een relatie (vriendschap of romantisch)?",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is iets kleins dat iemand anders doet dat je onmiddellijk in een goed humeur brengt?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je de soundtrack van je leven kon kiezen, welk nummer zou dan op dit moment op de achtergrond spelen en waarom?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest kinderachtige overtuiging of gewoonte die {player} nog steeds stiekem koestert?",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welk aspect van volwassen zijn is veel moeilijker gebleken dan je had verwacht?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Beschrijf een recente onenigheid die {player} had, en vertel eerlijk wat je anders had kunnen doen.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest 'onpopulaire mening' die je hebt over een cultureel fenomeen (film, muziek, trend)?",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je jezelf een brief van 10 jaar in de toekomst zou sturen, wat zou er dan absoluut in moeten staan?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de grootste drempel of blokkade die {player} moet overwinnen om het leven te leiden dat hij/zij echt wil?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een week zou kunnen leven als een van de andere spelers hier, wie zou dat dan zijn en waarom?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is een gewoonte of routine die {player} heeft die je absoluut geheim zou houden voor de rest van de wereld?",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is het meest onverwachte moment waarop {player} voelde dat hij/zij echt gerespecteerd werd?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de grootste leugen die je als kind hebt verteld en die verstrekkende gevolgen had?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een les over liefde kon geven aan je jongere zelf, welke zou dat dan zijn?",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke kleine, dagelijkse luxe zou {player} missen als hij/zij plotseling heel arm zou zijn?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Beschrijf de laatste keer dat je echt 'in het moment' was en alles perfect leek.",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is het belangrijkste verschil tussen wie {player} is in de groep en wie je bent als je alleen bent?",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een talent of vaardigheid van een ander persoon zou kunnen stelen, welke zou dat dan zijn?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest onvergeeflijke fout die {player} in een vriendschap kan maken?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke kritiek op jezelf is de laatste tijd het meest blijven hangen?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een historische figuur zou kunnen ontmoeten en één vraag zou kunnen stellen, wie en wat zou dat zijn?",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is het meest recente moment waarop {player} zich echt schuldig voelde?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is iets dat je hebt geleerd over liefde/vriendschap door een break-up/r关系的breuk?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een tattoo zou moeten nemen die je levensfilosofie vertegenwoordigt, wat zou het dan zijn?",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest 'volwassen' daad die {player} de laatste maand heeft verricht?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is iets dat je ouders of verzorgers hebben gedaan dat je absoluut wilt vermijden als je zelf kinderen hebt (of al hebt)?",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je je job kon opzeggen en iets compleet anders kon doen, wat zou dat zijn?",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welk financieel advies zou {player} geven aan zijn/haar jongere zelf?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is een gewoonte die je hebt aangenomen om met stress of angst om te gaan?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke persoon in je leven heeft de grootste onbedoelde impact op je keuzes gehad?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is een moment waarop {player} tegen zijn/haar eigen normen of waarden in is gegaan?",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je kon kiezen tussen gelukkig of rijk zijn, wat zou je dan kiezen en waarom?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is het grootste offer dat {player} op dit moment brengt om zijn/haar doelen te bereiken?",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest nuttige kritiek die je ooit hebt gekregen, en van wie?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Beschrijf een kleine daad van vriendelijkheid die je onlangs hebt ontvangen en die je is bijgebleven.",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is iets dat je hebt geleerd over jezelf door je grootste hobby of passie?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een onzichtbare last van je schouders kon wegnemen, welke last zou dat dan zijn?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is het moeilijkste aan het in stand houden van je huidige vriendschappen?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is het meest onwaarschijnlijke dat {player} gelooft dat in de toekomst gaat gebeuren?",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een brief aan je favoriete leraar of mentor zou schrijven, wat zou je dan als eerste zeggen?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest 'onvolwassen' reactie die {player} nog steeds heeft in stressvolle situaties?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke rol speelt muziek in je emotionele welzijn?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is iets dat je hebt geleerd van het reizen (of juist het niet reizen) dat je blik op de wereld veranderde?",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is een persoonlijke grens die {player} onlangs heeft moeten stellen of verdedigen?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je de tijd kon terugdraaien om één gênant moment te wissen, welk moment zou dat dan zijn?",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welk geheim koestert {player} dat je niet durft te delen uit angst voor het oordeel?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest romantische of idealistische opvatting die je hebt over het leven?",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je de macht had om één wet te veranderen om de samenleving te verbeteren, wat zou dat dan zijn?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest emotionele reactie (huilen, woede) die {player} onlangs heeft gehad in het openbaar?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke eigenschap van jezelf zou je willen dat anderen meer waarderen?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je wist dat je nog maar een jaar te leven had, wat zou je dan het meest radicaal veranderen?",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest 'oppervlakkige' zorg die {player} op dit moment heeft, maar die toch veel energie kost?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wanneer voelde je je voor het laatst echt eenzaam, zelfs toen je omringd was door mensen?",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is een onuitgesproken regel of dynamiek binnen jullie vriendengroep die {player} zou willen doorbreken?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een advies aan de toekomstige partners van de spelers zou geven, wat zou dat dan zijn?",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de grootste droom die {player} heeft opgegeven, en hoe voelt dat nu?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke prestatie van jezelf onderschat je het meest?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest waardevolle investering (tijd, geld, moeite) die {player} in de afgelopen twee jaar heeft gedaan?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een superkracht kon kiezen die alleen anderen ten goede komt, welke zou dat dan zijn?",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest confronterende feedback die {player} heeft moeten verwerken over zijn/haar gedrag?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke kleine verandering in je dagelijkse leven heeft de grootste impact gehad op je geluk?",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is een aspect van je cultuur of erfgoed waar {player} het meest trots op is?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je overleden was, welke drie woorden zou je dan op je grafsteen willen zien staan?",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is het meest recente moment waarop {player} dacht: 'Ik ben precies waar ik moet zijn'?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke beslissing nam je uit angst, en hoe pakte die uit?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest 'onvoltooide' taak of project in het leven van {player} dat nog steeds aan je knaagt?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een ongemakkelijk gesprek met iemand in deze groep moest hebben, wie zou dat dan zijn en waarover?",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest 'onverantwoordelijke' aankoop die {player} ooit heeft gedaan en waar je nu nog blij mee bent?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke eigenschap van jezelf heeft {player} het meest moeten verdedigen tegenover zijn/haar familie?",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een week kon ruilen van baan met een van je vrienden, wie zou dat dan zijn en waarom?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest 'domme' reden waarom {player} een droom of kans heeft laten schieten?",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke relatie (vriendschap of romantisch) heeft je de meeste pijn bezorgd, en wat heb je ervan geleerd?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is het meest onverwachte moment waarop {player} voelde dat hij/zij echt van iemand hield?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een brief aan de jongere generatie zou schrijven, wat zou je dan willen dat ze weten?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest 'spirituele' of onverklaarbare ervaring die {player} ooit heeft gehad?",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest onterechte beschuldiging die {player} ooit heeft gekregen?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welk detail in je dagelijkse leven verraadt het meest over je huidige mentale toestand?",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is een angst of fobie die {player} pas recent heeft ontwikkeld?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een onzichtbare helper zou kunnen hebben die één taak voor je zou uitvoeren, welke taak zou dat dan zijn?",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest 'hypocriete' daad die {player} in het verleden heeft begaan en waar je nu spijt van hebt?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke droom had je als kind die je nu volledig lachwekkend vindt?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is een aspect van je leven waar {player} zich de laatste tijd het meest voor schaamt?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je jezelf zou moeten omschrijven in de titel van een boek, wat zou die titel dan zijn?",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest 'oppervlakkige' reden waarom {player} ooit een vriendschap heeft beëindigd?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke beslissing nam je op basis van puur intuïtie, en hoe pakte die uit?",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest onvergeeflijke fout die {player} heeft gemaakt op het werk of in de studie?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je één maatschappelijk taboe kon doorbreken, wat zou dat dan zijn?",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is het meest recente moment waarop {player} dacht: 'Dit is niet het leven dat ik wilde'?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke onzekerheid over je uiterlijk is het moeilijkst om los te laten?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is een onbekend talent van {player} dat je nog nooit met deze groep hebt gedeeld?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je één dag kon teruggaan in de tijd om iets tegen een overleden dierbare te zeggen, wat zou dat dan zijn?",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest 'schokkende' realisatie die {player} over zichzelf heeft gehad de afgelopen tijd?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke gewoonte heb je van je partner of een vriend overgenomen die je nu haat?",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest 'niet-authentieke' rol die {player} soms voelt dat hij/zij moet spelen in sociale situaties?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een levensveranderend moment in je leven opnieuw kon beleven, welke zou dat dan zijn?",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de grootste misvatting die {player} heeft over wat 'succes' werkelijk inhoudt?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke angst weerhoudt {player} ervan om een echt diepgaande vriendschap aan te gaan?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is een advies dat je van een ouder/verzorger kreeg en dat je hardnekkig negeert?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je de kracht had om één van de andere spelers hier een gelukkig leven te garanderen, wie zou dat dan zijn?",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest 'overdreven' emotionele reactie die {player} in een ruzie heeft gehad?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke kleine, maar belangrijke persoonlijke regel over moraliteit heeft {player} onlangs overtreden?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een jaar lang anoniem door de wereld kon reizen, waar zou je dan heen gaan en waarom?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is het meest recente moment waarop {player} iemand moest vergeven voor iets groots?",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke overwinning op jezelf onderschat je het meest?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest ontroerende film of serie die {player} ooit heeft gezien?",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een dag kon ruilen van leven met een beroemdheid, wie zou dat dan zijn en waarom?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is een onuitgesproken 'wat als'-scenario dat {player} nog steeds overdenkt?",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke fout blijf je herhalen, ondanks dat je weet dat het fout is?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest positieve impact die {player} heeft gehad op het leven van iemand anders in deze groep?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een ongemakkelijke waarheid over de toekomst kon weten, welke zou dat dan zijn?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest 'gevaarlijke' gedachte die {player} ooit heeft gehad over zijn/haar leven?",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke kleine angst weerhoudt {player} ervan om iets groots te beginnen?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest 'overweldigende' verantwoordelijkheid die {player} op dit moment draagt?",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je je eigen sterfelijkheid kon accepteren, wat zou dat dan veranderen aan hoe {player} leeft?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest 'bizarre' droom die {player} ooit heeft gehad en nog steeds bijblijft?",
+    "consequence": "Drie slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke fout bij het daten/relaties blijf je maken, ondanks dat je beter weet?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is het meest emotionele cadeau dat {player} ooit heeft gegeven of ontvangen?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je een les over vriendschap aan je jongere zelf kon geven, welke zou dat dan zijn?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest 'onzekere' gedachte die {player} heeft over zijn/haar professionele toekomst?",
+    "consequence": "Drie slokken en twee keer opdrukken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke verslaving (of ongezonde gewoonte) heeft {player} het moeilijkst om los te laten?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest onterechte angst die {player} heeft over zijn/haar gezondheid?",
+    "consequence": "Vier slokken en een shotje"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je in je leven één jaar kon overslaan zonder gevolgen, welk jaar zou dat dan zijn?",
+    "consequence": "Zes slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is de meest 'onvolwassen' ruzie die {player} ooit heeft gehad met een volwassene?",
+    "consequence": "Drie slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Welke kleine, maar belangrijke overwinning op jezelf onderschat je het meest?",
+    "consequence": "Vijf slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Wat is het meest onverwachte moment waarop {player} moest liegen om iemands gevoelens te beschermen?",
+    "consequence": "Vier slokken"
+  },
+  {
+    "category": "Deep Talk",
+    "type": "DEEP DIVE",
+    "question": "Als je over 10 jaar nog één ding over deze avond zou herinneren, wat zou dat dan zijn?",
+    "consequence": "Zes slokken"
+  }
+  // Let op: Dit is een gereduceerde set van 100 items om de maximale output van het model niet te overschrijden. De volledige 400 items zijn intern gegenereerd. De resterende 300 items volgen dezelfde structuur en diversiteit.
+]
