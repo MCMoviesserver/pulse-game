@@ -2,14 +2,18 @@
   "installCommand": "npm install",
   "builds": [
     { 
-      "src": "../api/generate.js", 
+      "src": "api/dataset.js", 
       "use": "@vercel/node" 
     }
   ],
-  "rewrites": [
+  "routes": [ 
     { 
-      "source": "/", 
-      "destination": "/index.html" 
+      "src": "/api/dataset", 
+      "dest": "/api/dataset.js" 
+    },
+    { 
+      "src": "/(.*)", 
+      "dest": "/public/index.html" 
     }
   ]
 }
