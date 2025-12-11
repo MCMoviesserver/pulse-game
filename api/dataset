@@ -1,5 +1,4 @@
 // Bestand: api/dataset.js
-
 import { GoogleGenAI } from '@google/genai';
 import { createClient } from '@vercel/kv';
 
@@ -20,10 +19,9 @@ const ai = apiKey ? new GoogleGenAI({ apiKey }) : null;
 // Functie om de volledige dataset van Gemini te genereren
 async function generateFullDataset() {
     if (!ai) {
-        throw new Error('Gemini API Sleutel ontbreekt.');
+        throw new Error('Gemini API Sleutel ontbreekt of kon niet worden geïnitialiseerd.');
     }
 
-    // Dit is de prompt die de 200 'Doe of Faal' en 200 'Deep Talk' items genereert.
     const prompt = `
         Je bent een Game Master voor een extreem drankspel, PULSE. Genereer een JSON array met 400 objecten in totaal. 
         
@@ -60,7 +58,6 @@ async function generateFullDataset() {
             }
         });
 
-        // Gemini retourneert de JSON als een string, we moeten deze parsen
         const jsonResponse = JSON.parse(response.text.trim());
         
         if (!Array.isArray(jsonResponse) || jsonResponse.length === 0) {
