@@ -1,0 +1,16 @@
+{
+  "projectId": "prj_TXnwiGcNKQ89eWr18OIXsaZtxCYS",
+  "orgId": "team_ccEndxMMTn3SVW3gOw45jj7m",
+  "projectName": "pulse",
+  "settings": {
+    "createdAt": 1765282972283,
+    "framework": null,
+    "devCommand": null,
+    "installCommand": null,
+    "buildCommand": null,
+    "outputDirectory": null,
+    "rootDirectory": null,
+    "directoryListing": false,
+    "nodeVersion": "24.x"
+  }
+}

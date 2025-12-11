@@ -730,16 +730,27 @@
         });
 
 
+        /**
+         * AANGEPASTE LOGICA VOOR TERUGKNOP (🏠)
+         * - Gaat nu één scherm terug in plaats van direct naar Start of Namen.
+         */
         backButton.addEventListener('click', () => {
+             // Huidig Scherm: Game Screen -> Doel: Categorie Scherm
              if (gameScreen.classList.contains('show')) {
-                 if (confirm("Weet je zeker dat je het spel wilt stoppen en terugkeren naar het Hoofdscherm?")) {
+                 if (confirm("Weet je zeker dat je het spel wilt stoppen en terugkeren naar de categorieën?")) {
+                     // Spel wordt gestopt: Wis de spelers om een nieuwe setup te garanderen
                      players = [];
-                     showScreen(startScreen); 
+                     // We gaan naar Categorie Scherm
+                     showScreen(categoryScreen); 
                  }
+            // Huidig Scherm: Categorie Scherm -> Doel: Deelnemers Scherm
             } else if (categoryScreen.classList.contains('show')) {
-                 drawPlayersToDOM(players); 
+                 // Spelers array is mogelijk gevuld (als ze net van namescreen kwamen) of leeg (als ze van gamescreen kwamen)
+                 // Navigeer terug, de lijst blijft zichtbaar in de staat waarin hij was.
                  showScreen(playersScreen);
+            // Huidig Scherm: Deelnemers Scherm -> Doel: Start Scherm
             } else if (playersScreen.classList.contains('show')) {
+                 // Wis de spelers definitief
                  players = []; 
                  playersList.innerHTML = '';
                  showScreen(startScreen);
